@@ -115,6 +115,14 @@ figure{
 img{
   width: 10rem;
 }
+.nombreEmpresa{
+  color: #6E85B7;
+  font-size: 2rem;
+}
+.subNombreEmpresa{
+  color: #83c5f7;
+  font-size: 0.8rem;
+}
 .card1, .card2, .card3{
   padding: 1rem 1rem;
 }
@@ -199,5 +207,12 @@ img{
 
   .nav-toggle {
     display: none;
-  }  
+  } 
+  .card3{
+    /* padding-left: 5rem;
+    padding-right: 5rem; */
+    max-width: 70vw;
+    margin: auto;
+    
+  } 
 }

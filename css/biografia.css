@@ -62,18 +62,20 @@ h4{
 @media (min-width:820px){
     .jumbotron{
         display: flex;
-        padding: 2rem ;
+        padding: 2rem 5rem;
+        
         width: 100%;
     }
+
     .nombre{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .descripcion{
         padding: 4rem 2rem;
         justify-items: center;
     }
     .img-fluid{
-        width: 20rem;
+        width: 15rem;
     }
     .datos_academicos{
         display: flex;        

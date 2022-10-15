@@ -1,5 +1,6 @@
 body{
     background-color: #EEF1FF;
+    box-sizing: border-box;
 }
 /* form{
     width: 16rem;
