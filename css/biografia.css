@@ -1,0 +1,85 @@
+.container_principal{
+    position: relative;
+    top: 0rem;    
+    z-index: 1;
+    width: 100%;
+}      
+.jumbotron{
+    padding: 2rem;
+    background-color:#EEF1FF;
+} 
+.text-center{
+    margin: 2rem 0;
+}
+.figure{
+    display: flex;
+    justify-content: center;
+}
+.img-fluid{
+    width: 12rem;
+    border-radius: 50rem;            
+}        
+.nombre{
+    font-size: 1.2rem;
+    font-weight:bold;            
+    text-align: center;
+    padding: 1rem 0rem;
+}
+.cargo{            
+    text-align: center;
+    color:darkgrey;
+    font-size: 0.8rem;
+}
+.descripcion{
+    font-size: 1rem;
+}
+.descripcion p{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+.datos_academicos{
+    padding: 2rem ;
+    /* padding-bottom: 10rem; */
+}
+.educacion ul{
+    padding: 1rem 0rem 2rem 2rem;
+}
+.intereses ul{
+    padding: 1rem 0rem 2rem 2rem;
+}
+.areas ul{
+    padding: 1rem 0rem 2rem 2rem;
+}
+h4{
+    font-size: 1.2rem;
+    font-weight:bold; 
+}
+.datos_academicos li,.datos_academicos p{
+    font-size: 1rem;
+    
+}
+@media (min-width:820px){
+    .jumbotron{
+        display: flex;
+        padding: 2rem ;
+        width: 100%;
+    }
+    .nombre{
+        font-size: 2rem;
+    }
+    .descripcion{
+        padding: 4rem 2rem;
+        justify-items: center;
+    }
+    .img-fluid{
+        width: 20rem;
+    }
+    .datos_academicos{
+        display: flex;        
+    }
+    .datos_academicos>div{
+        padding: 2rem;
+    }
+}
+

@@ -1,0 +1,48 @@
+body{
+    background-color: #EEF1FF;
+}
+/* form{
+    width: 16rem;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    border-radius: 1rem;
+} */
+iframe{
+    width: 100vw;
+    height: 100vh;
+}
+h2{
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+input,textarea{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+textarea{
+    min-height: 15rem;
+    max-height: 20rem;
+    max-width: 100%;
+}
+#boton{
+    background-color: black;
+    color: #EEF1FF;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+#boton:hover{
+    cursor: pointer;
+}

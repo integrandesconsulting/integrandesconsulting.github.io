@@ -1,0 +1,28 @@
+/* body{
+    padding-top: 2rem;
+} */
+ul{    
+    margin: 1rem 1rem 2rem 2rem
+}
+.container_principal{
+    
+    margin: 0 1rem; 
+}
+.container_principal h1{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+.container_principal h2{
+    font-size: 1rem;
+}
+.container_principal h3{
+    font-size: 0.9rem;
+}
+.card1 p{
+    padding-bottom: 0.5rem;    
+}
+.card1 a{
+    text-decoration: none;
+    color: #6E85B7;
+    font-weight: bold;
+}
