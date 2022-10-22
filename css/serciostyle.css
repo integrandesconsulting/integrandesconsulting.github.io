@@ -33,6 +33,19 @@ ul{
 @media (min-width:768px){
     .container_principal{        
         max-width: 70vw;
-        margin: auto;
-      } 
+        margin: auto;        
+    } 
+    .container_principal h2{
+        font-size: 1.2rem;
+    }
+    .container_principal h3{
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+    .container_principal li{
+        font-size: 0.9rem;
+        font-weight: lighter;
+    }
+
+
 }

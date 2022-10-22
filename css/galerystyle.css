@@ -68,6 +68,13 @@ section{
     section{
         margin: 1rem 0;
     }
+    .container_principal{        
+        max-width: 70vw;
+        margin: auto;        
+    } 
+    .container_principal a{
+        font-size: 0.9rem;
+    }
 }
     
     
