@@ -226,5 +226,10 @@ img{
   .nav-menu{
     padding-left: 28vw;
   }
+}
+@media (min-width:1320px){
+  .nav-menu{
+    padding-left: 21vw;
+  }
 
 }
