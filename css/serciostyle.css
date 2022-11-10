@@ -10,14 +10,16 @@ ul{
 }
 .container_principal h1{
     padding: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .container_principal h2{
-    font-size: 1rem;
+    font-size: 1.2rem;    
 }
 .container_principal h3{
     padding-top: 1rem;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    color: #6E85B7;
+    font-weight: lighter;
 }
 .card1{
     min-height: 5rem;
@@ -29,6 +31,10 @@ ul{
     text-decoration: none;
     color: #6E85B7;
     font-weight: bold;
+}
+
+.card2 ul li{
+    font-size: 0.8rem;
 }
 @media (min-width:768px){
     .container_principal{        
