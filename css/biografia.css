@@ -1,3 +1,9 @@
+/* Header */
+.nav-menu-item:nth-child(3) a{
+    background-color:  #034574;
+    color: #83c5f7    
+}
+/* Body */
 .container_principal{
     position: relative;
     top: 0rem;    
@@ -41,7 +47,7 @@
 }
 .datos_academicos{
     padding: 2rem ;
-    /* padding-bottom: 10rem; */
+    padding-bottom: 0rem;
 }
 .educacion ul{
     padding: 1rem 0rem 2rem 2rem;
@@ -57,8 +63,19 @@ h4{
     font-weight:bold; 
 }
 .datos_academicos li,.datos_academicos p{
+    font-size: 1rem;    
+}
+.articulos_cientificos{
+    padding-bottom: 3rem;
+}
+.articulos_cientificos h3{
+    font-size: 1.2rem;
+}
+.articulos_cientificos article{
+    padding: 2rem;
+}
+.articulos_cientificos a{
     font-size: 1rem;
-    
 }
 @media (min-width:767px){
     .jumbotron{

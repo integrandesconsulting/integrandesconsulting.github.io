@@ -76,10 +76,9 @@ body {
   border-radius: 3px;
 }
 
-.nav-menu-link:hover,
-.nav-menu-link_active {
-  background: none;
-  color: #83c5f7;
+.nav-menu-link:hover{
+  background-color: #034574;
+  color: #83c5f7
 }
 
 /* TOGGLE */
@@ -205,11 +204,11 @@ img{
     padding-left: 15vw;
   }
   
-  .nav-menu-link:hover,
+  /* .nav-menu-link:hover,
   .nav-menu-link_active {
     background-color: #034574;
     transition: 0.5s;
-  }
+  } */
 
   .nav-toggle {
     display: none;
