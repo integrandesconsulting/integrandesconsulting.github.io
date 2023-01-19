@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-uk">
+<head>
+	<meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería - Integrandes</title>
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/biografia.css"> -->
+    <link rel="stylesheet" href="./css/galerystyle.css">
+    <link rel="stylesheet" href="./css/videograph01.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <script defer src="./js/index.js"></script>    
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="./index.html" class="logo nav-link">Integrandes</a>
+            <button class="nav-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+            <ul class="nav-menu">
+                <!-- <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Principios</a></li> -->
+                <li class="nav-menu-item"><a href="./servicios.html" class="nav-menu-link nav-link">Servicios</a></li>
+                <li class="nav-menu-item"><a href="./galery.html" class="nav-menu-link nav-link">Galería</a></li>
+                <li class="nav-menu-item"><a href="./biografia.html" class="nav-menu-link nav-link">Equipo</a></li>
+                <li class="nav-menu-item"><a href="./contacto2.html" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container_principal">        
+        <h1>Visualización espacial de poblaciones</h1>   
+        <section class="accordion">
+            <article class="content">
+                <h2 class="departamento">Departamento de Piura </h2>
+                <article class="video_toggle">
+                    <iframe src="https://www.youtube.com/embed/5SgZ25M1ML0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/5SgZ25M1ML0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </article>
+            </article>
+            <article class="content">
+                <h2 class="departamento">Departamento de la Libertad </h2>
+                <article class="video_toggle">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5SgZ25M1ML0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </article>
+            </article>
+            <article class="content">
+                <h2 class="departamento">Departamento de Lima </h2>
+                <article class="video_toggle">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5SgZ25M1ML0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </article>
+            </article>
+            <article class="content">
+                <h2 class="departamento">Departamento de Cajamarca </h2>
+                <article class="video_toggle">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5SgZ25M1ML0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </article>
+            </article>            
+        </section>
+        
+        <section class="formulario">
+            <h2 class="formulario-title">Déjanos tu comentario para mejorar este trabajo</h2>
+            <article class="form" >
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdUr34K4bgN6Hs21JzIExWSggKgkc_gMIspR-KEfmvj1HC9YA/viewform?embedded=true" width="100%" height="987" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+            </article>   
+            <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdUr34K4bgN6Hs21JzIExWSggKgkc_gMIspR-KEfmvj1HC9YA/viewform?embedded=true" width="640" height="987" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>          -->
+        </section>
+    </main>   
+    <footer class="footer">
+        <div class="social_links">
+            <a href = "mailto:integrandes.consulting@gmail.com" class="btn-envelope"><i class="fa fa-envelope"></i></a>
+            <a href = "https://github.com/integrandesconsulting" class="btn-github"><i class="fa-brands fa-github"></i></a>
+            <!-- <a href = "https://www.linkedin.com/in/integrandes-consulting-194756253/" class="btn-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href = "https://twitter.com/IntegrandesCons?s=20&t=xqFDojNO-OxEXRbgI9Z_5A" class="btn-twitter"><i class="fa-brands fa-square-twitter"></i></a>                  -->
+            <a href="https://www.facebook.com/asesorjnut" class="btn-fb"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <!-- <p class='author'>
+            <small>Desarrollado por <a href="">Lulu</a></small>
+        </p>                        -->
+    </footer>
+    <script>
+        const accordion = document.getElementsByClassName('content');
+        for(i=0;i<accordion.length;i++){
+            accordion[i].addEventListener('click',function(){
+                this.classList.toggle('active')
+            })
+        }
+        const formulario = document.getElementsByClassName('formulario');
+        for(i=0;i<formulario.length;i++){
+            formulario[i].addEventListener('click',function(){
+                this.classList.toggle('active')
+            })
+        }
+        
+
+    </script>     
+</body>
+</html>
+
