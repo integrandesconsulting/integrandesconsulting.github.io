@@ -4,44 +4,73 @@
     color: #83c5f7    
 }
 
+/* Main */
+
 /* body{
     padding-top: 2rem;
 } */
 ul{    
     margin: 1rem 1rem 2rem 2rem
 }
-.container_principal{
-    
+.container_principal{    
     margin: 0 1rem; 
 }
 .container_principal h1{
     padding: 1rem 0;
     font-size: 1.8rem;
 }
-.container_principal h2{
+/* .container_principal h2{
     font-size: 1.2rem;    
-}
+} */
 .container_principal h3{
     padding-top: 1rem;
     font-size: 0.9rem;
     color: #6E85B7;
     font-weight: lighter;
 }
-.card1{
-    min-height: 5rem;
-}
-.card1 p{
-    padding-bottom: 0.5rem;    
-}
-.card1 a{
-    text-decoration: none;
-    color: #6E85B7;
-    font-weight: bold;
-}
-
-.card2 ul li{
+.card ul li{
     font-size: 0.8rem;
 }
+.container_principal .card h2{
+    font-size: 1.1rem;
+    position: relative;
+    padding: 1rem;
+    margin: .5rem auto;
+    background: #EEF1FF;
+    color: #6E85B7;
+    font-weight: lighter;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.container_principal .card h2::before{
+    content: '+';
+    position: absolute;
+    top: 80%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+}
+.container_principal .card.active h2::before{
+    content: '-';
+}
+
+.container_principal .card .detalles{
+    display: flex;  
+    flex-direction: column;    
+    /* align-items: center; */
+    /* background-color: #2c3e50; */
+    position: relative;  
+    height: 0;    
+    overflow: hidden;
+    overflow-y: auto;
+    transition: left 0.5s;
+}
+.container_principal .card.active .detalles{
+    height: auto;
+
+}
+
 @media (min-width:768px){
     .container_principal{        
         max-width: 70vw;
@@ -57,6 +86,14 @@ ul{
     .container_principal li{
         font-size: 0.9rem;
         font-weight: lighter;
+    }
+    .container_principal .card h2::before{
+        content: '+';
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
     }
 
 

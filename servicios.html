@@ -17,12 +17,16 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="./index.html" class="logo nav-link">Integrandes</a>
+            <article class="logotipo">
+                <article>
+                    <img src="https://i.postimg.cc/0N1LCbpm/logo1.png" alt="">                    
+                </article>
+                <a href="./index.html" class="logo nav-link">Integrandes</a>
+            </article>                
             <button class="nav-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
             <ul class="nav-menu">
-                <!-- <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Principios</a></li> -->
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Servicios</a></li>
-                <li class="nav-menu-item"><a href="./galery.html" class="nav-menu-link nav-link">Galería</a></li>
+                <li class="nav-menu-item"><a href="./servicios.html" class="nav-menu-link nav-link">Servicios</a></li>
+                <li class="nav-menu-item"><a href="./galery.html" class="nav-menu-link nav-link">Portafolio</a></li>
                 <li class="nav-menu-item"><a href="./biografia.html" class="nav-menu-link nav-link">Equipo</a></li>
                 <li class="nav-menu-item"><a href="./contacto2.html" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a></li>
             </ul>
@@ -30,40 +34,43 @@
     </header>
     <main class="container_principal">
         <h1>Servicios</h1>
-        <section class="card1">
-            <h2>Ciencia de datos espaciales</h2>                       
-        </section>
-        <section class="card2">
-            <h2>Asesoría en investigación académica</h2>
-            <!-- <article class="modalidades"> -->
-                <!-- <h3>3 Modalidades de servicio</h3>
+        <section class="card">
+            <h2>Consultoría en ciencia de datos y análisis geoespacial</h2>  
+            <article class="detalles">
                 <ul>
-                    <li>Asesoría puntual:
-                        <p>Se agenda una reunión específica de asesoría, con una duración estimada de reunión, en las cuales se atienden consultas puntuales.</p>
-                    </li>
-                    <li>Paquete de asesoría:
-                        <p>Comprende analizar la situación del tesista y acordar un programa de asesorías que necesitaría obtener, indicándose las sesiones y/o actividades determinadas (mínimo 6 horas equivalentes de reunión). Para esta modalidad hay un 10% de descuento sobre la tarifa regular.</p>
-                    </li>
-                    <li>Tesis completa:
-                        <p>Se asesora al tesista en toda la etapa de su investigación. Desde sus ideas de investigación, pasando por la formulación de la propuesta de investigación, el borrador de tesis, hasta la sustentación. Se cobra un precio especial global</p>
-                    </li>
-                </ul>                
-            </article>
-            <p><a href="./termscond.html" >Términos y condiciones del servicio</a></p>
-            <p><a href="./metodologi.html" >Metodología de trabajo</a></p> -->
-            <h3>Estrategias y herramientas para:</h3>
-            <ul>
-                <li>Selección de tema de investigación.</li>
-                <li>Elaboración y ejecución de la propuesta de investigación.</li>
-                <li>Gestión y análisis de información.</li>
-                <li>Análisis de datos.</li>
-                <li>Presentaciones académicas.</li>
-                <li>Redacción.</li>
-
-            </ul>
-        </section>        
-        
-
+                    <li> Identificación de patrones espaciales </li>
+                    <li> Desarrollo de dashboards y visualizaciones de datos en 2d, 3d e interactivos.</li>
+                    <li> Análisis exploratorio de datos</li>
+                    <li> Análisis de imágenes satelitales</li>
+                    <li> Visualización de soluciones en la web.</li>
+                    <li> Webscraping de información</li>
+                </ul>                     
+            </article>            
+        </section>
+        <section class="card">
+            <h2>Consultoría en Gestión del riesgo de desastres</h2>
+            <article class="detalles">
+                <ul>
+                    <li>Formulación y evaluación de planes de gestión del riesgo de desastres</li>
+                    <li>Talleres de concientización el gestión del riesgo de desastres</li>
+                    <li>Monitoreo y análisis de indicadores de gestión del riesgo de desastres</li>
+                </ul>
+            </article>            
+        </section>
+        <section class="card">
+            <h2>Asesoría académica y en investigación</h2>
+            <article class="detalles">
+                <h3>Estrategias y herramientas para:</h3>
+                <ul>
+                    <li>Selección de tema de investigación.</li>
+                    <li>Elaboración y ejecución de la propuesta de investigación.</li>
+                    <li>Gestión y análisis de información.</li>
+                    <li>Análisis de datos.</li>
+                    <li>Presentaciones académicas.</li>
+                    <li>Redacción.</li>
+                </ul>
+            </article>            
+        </section>    
     </main>   
     <footer class="footer">
         <div class="social_links">
@@ -73,9 +80,17 @@
             <a href = "https://twitter.com/IntegrandesCons?s=20&t=xqFDojNO-OxEXRbgI9Z_5A" class="btn-twitter"><i class="fa-brands fa-square-twitter"></i></a>                  -->
             <a href="https://www.facebook.com/asesorjnut" class="btn-fb"><i class="fa-brands fa-facebook"></i></a>            
         </div>
-        <!-- <p class='author'>
-            <small>Desarrollado por <a href="">Lulu</a></small>
-        </p>                        -->
-    </footer>     
+        <p class='author'>
+            <small>Desarrollado por <a href="https://github.com/lurteaga">Lourdes Urteaga</a></small>
+        </p>                       
+    </footer> 
+    <script>
+        const container_principal = document.getElementsByClassName('card');
+        for(i=0;i<container_principal.length;i++){
+            container_principal[i].addEventListener('click',function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>    
 </body>
 </html>

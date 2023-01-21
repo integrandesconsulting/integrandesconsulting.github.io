@@ -20,16 +20,7 @@ h1{
 h2{
     padding: 1rem 0;
 }
-.figure{    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.img{
-    width: 14.5rem;
-    border-radius: 2rem;  
-    padding: 0.2rem;          
-}  
+
 .container_principal{
     position: relative;
     /* top: 7rem; */
@@ -63,24 +54,38 @@ section{
     h2{
         padding-bottom: 1rem;
     }    
-    .figure{    
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;        
-    }
-    .img{
-        width: 24rem;
-    }
+    
     section{
         margin: 1rem 0;
     }
     .container_principal{        
         max-width: 70vw;
-        margin: auto;        
+        margin: auto;    
+        
     } 
     .container_principal a{
         font-size: 0.9rem;
     }
+    .card-gallery{
+        display: flex;
+        flex-direction: column;
+    }
+    .container_principal .card-gallery img{
+        width: 15rem;
+        height: 15rem;
+
+    }
+    .container_principal .card-gallery a{
+        width: 15rem;
+    }
+    .container_principal .cards{
+        display: flex;
+        flex-wrap: wrap; 
+        background-color:#EEF1FF   ;
+        justify-content: center;
+    }
+
+
 }
     
     

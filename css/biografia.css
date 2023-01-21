@@ -13,6 +13,7 @@
 .jumbotron{
     padding: 2rem;
     background-color:#EEF1FF;
+    justify-content: center;
 } 
 .text-center{
     margin: 2rem 0;
@@ -48,6 +49,7 @@
 .datos_academicos{
     padding: 2rem ;
     padding-bottom: 0rem;
+    justify-content: center;
 }
 .educacion ul{
     padding: 1rem 0rem 2rem 2rem;
