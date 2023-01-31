@@ -1,11 +1,11 @@
-p, li{
+.container_principal p, .container_principal li{
     font-size: 0.8rem;
     padding: .5rem 0;
 }
-ul{
+.container_principal ul{
     padding: 1rem 1rem 1rem 2rem;
 }
-section{
+.container_principal section{
     padding: 0.2rem;
 }
 

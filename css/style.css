@@ -156,6 +156,7 @@ body {
 }
 .principio-de-trabajo{
   background-color: #EEF1FF;
+  
 }
 .principio-de-trabajo h1{
   font-size: 1.2rem;
@@ -165,6 +166,7 @@ body {
 }
 .principio-de-trabajo ul li{
   font-size: 0.8rem;
+  padding-bottom: 0.5rem;
 }
 
 
@@ -234,7 +236,6 @@ body {
     width: auto;
   } 
   
-
   .nav article{
     display: flex;
     flex-direction: column;
@@ -252,6 +253,7 @@ body {
     max-width: 70vw;
     margin: auto;
     font-size: 1rem;
+    margin: 0 1rem;
   } 
 }
 

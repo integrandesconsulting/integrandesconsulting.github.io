@@ -64,41 +64,57 @@ h4{
     font-size: 1.2rem;
     font-weight:bold; 
 }
-.datos_academicos li,.datos_academicos p{
+.datos_academicos .educacion div{
+    padding-bottom: .3rem;
+}
+.datos_academicos li{
     font-size: 1rem;    
 }
-.articulos_cientificos{
-    padding-bottom: 3rem;
+.datos_academicos p{
+    font-size: 0.9rem; 
+    color: #034574;   
 }
-.articulos_cientificos h3{
+.publicaciones{
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+}
+.publicaciones h3{
     font-size: 1.2rem;
 }
-.articulos_cientificos article{
+.publicaciones article{
     padding: 2rem;
 }
-.articulos_cientificos a{
+.publicaciones li{
     font-size: 1rem;
+    padding-bottom: .3rem;
+}
+.publicaciones a{
+    font-size: 1rem;
+    overflow-wrap: anywhere;
 }
 @media (min-width:767px){
     .jumbotron{
         display: flex;
-        padding: 2rem 0rem;        
+        padding: 0rem;        
         width: 100%;
     }
     .text-center{
         margin: 2rem;
-        padding: 2rem 0rem;
+        padding: 0rem;
+        width: 50%;
     }
     .nombre{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .descripcion{
-        padding: 4rem 2rem;
+        display: flex;
+        padding: 0rem 2rem;
         justify-items: center;
+        width: 50%;
     }
-    .img-fluid{
-        width: 15rem;
-    }
+    /* .img-fluid{
+        width: 10rem;
+    } */
     .datos_academicos{
         display: flex;        
     }
@@ -112,5 +128,9 @@ h4{
         max-width: 90vw;
         margin: auto;        
     } 
+    .publicaciones{
+        /* padding-bottom: 3rem; */
+        padding-left: 4rem;
+    }
 }
 

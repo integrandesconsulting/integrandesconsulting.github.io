@@ -25,8 +25,9 @@ ul{
 .container_principal h3{
     padding-top: 1rem;
     font-size: 0.9rem;
-    color: #6E85B7;
-    font-weight: lighter;
+    /* color: #6E85B7; */
+    font-weight:bold;
+    padding-left: 1rem;
 }
 .card ul li{
     font-size: 0.8rem;
