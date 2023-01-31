@@ -31,10 +31,11 @@
     font-weight:bold;            
     text-align: center;
     padding: 1rem 0rem;
+    color:#6E85B7;
 }
 .cargo{            
     text-align: center;
-    color:darkgrey;
+    color: #83c5f7;
     font-size: 0.9rem;
 }
 .descripcion{
@@ -95,7 +96,8 @@ h4{
 @media (min-width:767px){
     .jumbotron{
         display: flex;
-        padding: 0rem;        
+        padding-left: 10vw;        
+        padding-right: 10vw;        
         width: 100%;
     }
     .text-center{
@@ -121,9 +123,9 @@ h4{
     .datos_academicos>div{
         padding: 2rem;
     }
-    .descripcion{
+    /* .descripcion{
         max-width: 40rem;
-    }
+    } */
     .container_principal{        
         max-width: 90vw;
         margin: auto;        
