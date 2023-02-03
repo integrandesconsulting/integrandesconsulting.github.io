@@ -102,6 +102,26 @@
     content: '-';
 }
 
+.oferta-servicio{    
+    border-radius: 0.8rem;
+    border-color: #6E85B7;
+    border-style: solid;
+    margin-top: 3rem;
+    
+}
+.oferta-servicio p{
+    /* color: #83c5f7; */
+    color: #6E85B7;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 0.1rem 5rem;
+
+}
+.oferta-servicio i{
+    /* color: #6E85B7; */
+    color: #83c5f7;
+}
 
 @media (min-width:760px){    
     /* .map-data .imagen img{
