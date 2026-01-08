@@ -4,39 +4,35 @@ page-layout: full
 toc: false
 format:
   html:
-    css: style.css
+    css: styles.css
 ---
 
-::: {.hero}
-
-::: {.hero-left}
-::: {.media-card}
+:::::::::: hero
+:::: hero-left
+::: media-card
 ![](images/cajamarca.gif){.hero-media alt="Ciudad de Cajamarca (GIF)"}
-
 :::
-:::
+::::
 
-::: {.hero-right}
-
-::: {.brand}
+::::::: hero-right
+::::: brand
 ![](images/logo.png){.brand-logo alt="Logo Integrandes"}
 
-::: {.brand-title}
+::: brand-title
 Integrandes
 :::
 
-::: {.brand-tagline}
+::: brand-tagline
 Integralidad en el desarrollo
 :::
-:::
+:::::
 
-::: {.card-soft}
+::: card-soft
 ## Principios de trabajo
 
-- **Ética:** se realiza un trabajo honesto y se pide a los clientes que toda coordinación se realice dentro de dichos marcos.
-- **Claridad:** buscamos que nuestros clientes tengan la mayor claridad sobre los procedimientos que realizamos.
-- **Calidad:** nos comprometemos a realizar un servicio de calidad, según los requerimientos especiales de cada cliente.
+-   **Ética:** se realiza un trabajo honesto y se pide a los clientes que toda coordinación se realice dentro de dichos marcos.
+-   **Claridad:** buscamos que nuestros clientes tengan la mayor claridad sobre los procedimientos que realizamos.
+-   **Calidad:** nos comprometemos a realizar un servicio de calidad, según los requerimientos especiales de cada cliente.
 :::
-
-:::
-:::
+:::::::
+::::::::::

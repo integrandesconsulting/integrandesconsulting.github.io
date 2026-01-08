@@ -3,13 +3,13 @@ project:
   output-dir: docs
 
 website:
-  title: "INTEGRANDES CONSULTING"
-  favicon: rudder.svg
+  title: "Integrandes"
+  favicon: images/logo.png
   open-graph: true
   site-url: https://integrandesconsulting.github.io/
-
   navbar:
-    collapse-level: 0
+    logo: images/logo.png
+    collapse-level: 1
     right:
       - href: index.qmd
         text: Inicio
@@ -21,11 +21,9 @@ website:
         text: Equipo
       - href: contacto.qmd
         text: Contacto
-        
-        
   page-footer:
     border: true
-    center: 
+    center:
       - icon: github
         href: https://github.com/integrandesconsulting
       - icon: facebook
@@ -33,7 +31,7 @@ website:
       - icon: youtube
         href: https://www.youtube.com/
     right: "Copyright © 2026 R.R."
-        
+
 format:
   html:
     theme:
