@@ -226,3 +226,152 @@ figure {
   line-height: 0 !important;
   border: 0 !important;
 }
+
+/* ------ E Q U I P O ------*/
+
+/* =========================
+   EQUIPO (LIGHT/DARK + 3 columnas anchas)
+   ========================= */
+
+/* Fondo solo en página equipo */
+.page-equipo{
+  background: #E8F3FF;
+}
+@media (prefers-color-scheme: dark){
+  .page-equipo{ background: #0D1117; }
+}
+
+/* Título centrado y elegante */
+.team-title{
+  text-align: center;
+  font-family: "Georgia", ui-serif, serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin: 2.2rem 0 1.3rem;
+  color: #0A1F2C;
+}
+@media (prefers-color-scheme: dark){
+  .team-title{ color: #FFFFFF; }
+}
+
+/* Grilla 3 columnas anchas en desktop */
+.team-grid{
+  max-width: 1350px; /* sección más ancha */
+  margin: 0 auto;
+  padding: 0 1rem 2.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(330px, 1fr));
+  gap: 1.8rem;
+  justify-content: center;
+}
+@media (max-width: 1050px){
+  .team-grid{ grid-template-columns: repeat(2, minmax(300px, 1fr)); }
+}
+@media (max-width: 650px){
+  .team-grid{ grid-template-columns: 1fr; }
+}
+
+/* Card LIGHT (celeste intenso, ancho, texto negro) */
+.team-card{
+  background: #AEE6FF; /* celeste intenso armonioso */
+  border-radius: 22px;
+  padding: 1.6rem;
+  border: 0;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+  transition: transform .25s ease, box-shadow .25s ease;
+  color: #0A1F2C;
+  overflow: hidden;
+}
+
+/* Hover flotante */
+.team-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 16px 44px rgba(0,162,255,0.32);
+}
+
+/* Foto proporcional sin distorsión */
+.team-photo{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  margin-bottom: 1rem;
+  background: rgba(255,255,255,0.5);
+}
+
+/* Nombre/rol */
+.team-name{
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 1.45rem;
+  font-weight: 900;
+  margin: 0.2rem 0 0.5rem;
+  color: #062233;
+}
+@media (prefers-color-scheme: dark){
+  .team-name{ color: #FFFFFF; }
+}
+
+/* Texto fuerte dentro de card */
+.team-card strong{
+  font-weight: 800;
+  color: #062233;
+}
+@media (prefers-color-scheme: dark){
+  .team-card strong{ color: #D7E6F0; }
+}
+
+/* Botón (acentos intensos) */
+.team-button{
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: .65rem 1.4rem;
+  border-radius: 14px;
+  font-weight: 900;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  background: #00C896; /* verde intenso para diferenciar */
+  color: #0A1F2C;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0,200,150,0.28);
+  transition: transform .18s ease, background .18s ease, color .18s ease;
+}
+
+.team-button:hover{
+  background: #0077FF; /* azul intenso alterno */
+  color: #ffffff;
+  transform: scale(1.04);
+}
+
+/* ===== DARK MODE CARDS ===== */
+@media (prefers-color-scheme: dark){
+
+  /* Card dark gris intenso + texto blanco */
+  .team-card{
+    background: #2B2F33; /* gris oscuro intenso */
+    box-shadow: 0 14px 34px rgba(0,0,0,0.55);
+    color: #FFFFFF;
+  }
+
+  .team-card:hover{
+    box-shadow: 0 18px 48px rgba(0,212,255,0.28);
+  }
+
+  .team-photo{
+    background: rgba(255,255,255,0.06);
+  }
+
+  .team-button{
+    background: #00D4FF; /* cyan brillante */
+    color: #0A0F14;
+    box-shadow: 0 10px 22px rgba(0,212,255,0.18);
+  }
+
+  .team-button:hover{
+    background: #FF2BE2; /* magenta vibrante */
+    color: #ffffff;
+  }
+}
+
+

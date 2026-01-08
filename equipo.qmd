@@ -1,3 +1,52 @@
 ---
-title: "Equipo"
+title: ""
+format: html
+toc: false
+body-class: page-equipo
 ---
+
+## Equipo {.team-title}
+
+::: {.team-grid}
+::: {.team-card}
+![](images/juan.jpg){.team-photo}
+
+### CONSULTOR {.team-name}
+
+**Coordinación & Data Civil (UNI)**
+
+- Planificación territorial
+- Análisis estructural reproducible
+- Quarto & visualización de datos
+
+[Ver detalle](#){.team-button}
+:::
+
+::: {.team-card}
+![](images/lourdes.jpg){.team-photo}
+
+### CONSULTORA {.team-name}
+
+**IA & Bases de datos**
+
+- Modelado predictivo
+- Arquitectura de datos
+- Integración con RStudio
+
+[Ver detalle](#){.team-button}
+:::
+
+::: {.team-card}
+![](images/tierra.gif){.team-photo}
+
+### Colaborador (rafa) {.team-name}
+
+**Soporte técnico**
+
+- Ensayos
+- Automatización
+- Documentación
+
+[Ver detalle](#){.team-button}
+:::
+:::
