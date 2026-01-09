@@ -260,20 +260,20 @@ figure {
 }
 
 /* Título centrado y elegante (pero con tipografía del navbar y delgado) */
-.team-title{
+.team-title {
   text-align: center;
-  font-size: 3.2rem;
-  font-weight: 300;            /* antes 900 */
-  margin: 2.2rem 0 1.3rem;
-  color: #0A1F2C;
+  font-size: 3rem;
+  font-weight: 400; /* no forzado, permite heredar del sistema */
+  font-family: var(--font-navbar, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif);
+  color: #2B3A42; /* tono oscuro suave para light */
+  margin: 2rem 0 1rem;
+  transition: color 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark){
-  .team-title{
-    color: #F2FAFF !important;   /* blanco */
-  }
-  .team-title::after{
-    background: rgba(242,250,255,.20) !important;
+/* Contraste para dark mode */
+@media (prefers-color-scheme: dark) {
+  .team-title {
+    color: #ffffff !important; /* blanco sólido para contraste máximo */
   }
 }
 
