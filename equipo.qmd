@@ -12,16 +12,11 @@ body-class: page-equipo
 ::: {.team-card}
 ![](images/juan.jpg){.team-photo}
 
-### Mg. Juan Numan Urteaga Tirado {.team-name}
+### **Mg. Juan Numan Urteaga Tirado** {.team-name}
 
 **Consultor**
 
-- Alumno del Advanced Program in Data Science & Global Skills  
-  *Aporta y MIT IDSS (Massachusetts Institute of Technology – Institute for Data, Systems and Society), en curso.*
-- Mag. Ingeniería Civil  
-  *Pontificia Universidad Católica del Perú, 2019.*
-- BSc. en Ingeniería Civil  
-  *Universidad Nacional de Ingeniería, 2016.*
+Actualmente es docente de la UNI en la maestría de Gestión del Riesgo de Desastres. También es cofundador e investigador del Grupo de Investigación en Territorio, Infraestructura, Planificación y Sociedad - KAWSAY TIPS de la UNI.
 
 <button
   type="button"
@@ -39,7 +34,7 @@ body-class: page-equipo
 ::: {.team-card}
 ![](images/lourdes.jpg){.team-photo}
 
-### Ing. Lourdes Urteaga Tirado {.team-name}
+### **Ing. Lourdes Urteaga Tirado** {.team-name}
 
 **Consultora**
 
@@ -65,9 +60,7 @@ Ingeniera Ambiental por la Universidad Nacional de Trujillo (UNT). Cuenta con es
 
 **Colaborador**
 
-- Ensayos
-- Soporte
-- Documentación
+Estudiante de ingeniería civil de la UNI
 
 <button
   type="button"
@@ -89,33 +82,41 @@ Ingeniera Ambiental por la Universidad Nacional de Trujillo (UNT). Cuenta con es
 ::: {.team-details-hidden}
 
 ::: {#details-juan .team-detail}
-### Perfil
-Consultor con enfoque en análisis y estructuración de entregables. Acompaña proyectos con claridad técnica y orden documental.
+### Euación
+- Alumno del **Advanced Program** in **Data Science & Global Skills** 
+Aporta y MIT IDSS (Massachusetts Institute of Technology -Institute for Data, Systems and Society), en curso.
+- Mag. Ingeniería Civil
+Pontificia Universidad Católica del Perú, 2019.
+- BSc. en Ingeniería Civil
+Universidad Nacional de Ingeniería, 2016.
 
-**Publicaciones:**  
-[Abstracts – UEP 2020 Conference](https://sites.google.com/view/uep2020-conference/abstracts?authuser=0)
+### Temas de interés
+- Planificación y desarrollo territorial
+- Gestión del riesgo de desastres
+- Ciencia de datos espaciales
 
-### Especialidades
-- Ciencia de datos aplicada a proyectos.
-- Documentación y estandarización de reportes.
-- Soporte técnico y metodológico para equipos.
+### Experiencia
+- Gestión de riesgos de desastres en localidades
+- Metodología de investigación
+- Análisis de datos espaciales
+- Monitoreo de proyectos de desarrollo
+- Tasaciones
 
-### Formación
-- Advanced Program in Data Science & Global Skills (Aporta + MIT IDSS), en curso.
-- Magíster en Ingeniería Civil – PUCP (2019).
-- Bachiller en Ingeniería Civil – UNI (2016).
+### Publicaciones
+- Urteaga-Tirado, J. N., Santa-Cruz, S., Fernández de Córdova, G., & Vilela, M. (2021). 2017 Coastal El Niño in Peru: An opportunity to analyze the influence of hazard mitigation plans on local resilience. In J. M. Mendes, G. Kalonji, R. Jigyasu, & A. Chang-Richards (Eds.), *Strengthening Disaster Risk Governance to Manage Disaster Risk* (pp. 117–131). [https://doi.org/10.1016/B978-0-12-818750-0.00012-X](https://www.sciencedirect.com/science/article/pii/B978012818750000012X?via%3Dihub)
+- Presentación oral [“Spatial relationships between hazard maps, urban zoning and housing damage in Piura city, Peru”](https://sites.google.com/view/uep2020-conference/abstracts?authuser=0)
 :::
 
 ::: {#details-lourdes .team-detail}
-### Perfil
+### Educación
 Ingeniera Ambiental (UNT), con estudios de maestría en Tratamiento de aguas y desechos (UNI). Integra herramientas digitales para mejorar análisis, reportes y comunicación de resultados.
 
-### Áreas de trabajo
+### Temas de interés
 - Tratamiento de aguas y residuos.
 - Gestión ambiental y soporte técnico.
 - Herramientas digitales para análisis y reportes.
 
-### Formación y becas
+### Experiencia
 - Maestría (estudios) – UNI (Tratamiento de aguas y desechos).
 - Becas/cursos en Desarrollo web: Platzi y Proinnovate.
 :::

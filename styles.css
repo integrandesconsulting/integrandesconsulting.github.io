@@ -241,13 +241,29 @@ figure {
   .page-equipo{ background: #0D1117; }
 }
 
-/* Título centrado y elegante */
-/* Título Equipo: contraste correcto en dark */
+/* ===== Tipografía uniforme como NAVBAR (Bootstrap) =====
+   En Windows normalmente se renderiza como "Segoe UI"
+*/
+.team-title,
+.team-name,
+.team-card,
+.team-card h3,
+.team-card h4,
+.team-card h5,
+.team-card p,
+.team-card li,
+.team-card ul,
+.team-card strong,
+.team-button{
+   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: normal; /* ✔️ no fuerza delgado, deja que strong y clases funcionen */
+}
+
+/* Título centrado y elegante (pero con tipografía del navbar y delgado) */
 .team-title{
   text-align: center;
-  font-family: "Georgia", ui-serif, serif;
   font-size: 3.2rem;
-  font-weight: 900;
+  font-weight: 300;            /* antes 900 */
   margin: 2.2rem 0 1.3rem;
   color: #0A1F2C;
 }
@@ -278,45 +294,43 @@ figure {
   .team-grid{ grid-template-columns: 1fr; }
 }
 
-/* Card: título centrado */
+/* Card: título centrado (delgado) */
 .team-card h3,
 .team-card h4,
 .team-card h5{
   text-align: center;
   font-size: 1.15rem;   /* reduce */
-  font-weight: 900;
+  font-weight: 300;     /* antes 900 */
   margin: .4rem 0 .6rem;
 }
 
-/* Subtítulos fuertes centrados */
-.team-card strong{
+/* Subtítulos centrados (delgado) */
+/* ✔️ NUEVO: el rol sí puede verse en negrita */
+.team-card .team-role{
   display: block;
   text-align: center;
-  font-size: 1rem;      /* reduce */
-  font-weight: 800;
+  font-size: 1rem;
+  font-weight: 600 !important; /* ✔️ bold elegante */
   margin-bottom: .6rem;
+  font-style: normal;
 }
+
 
 /* Texto del contenido justificado y más pequeño */
 .team-card p,
 .team-card li{
   font-size: .95rem;    /* reduce */
   line-height: 1.35;
+  font-weight: 300;     /* asegura delgado */
 }
 
-/* Lista: justificada (con cuidado, se verá “más formal”) */
+/* Lista: justificada */
 .team-card ul{
   margin: .8rem 0 0;
   padding-left: 1.15rem;
   text-align: justify;
   text-justify: inter-word;
 }
-
-/* Si tus bullets se ven raros por justify, usa esto en lugar de lo de arriba:
-.team-card ul{ text-align: left; }
-.team-card li{ text-align: left; }
-*/
-
 
 /* Card LIGHT (celeste intenso, ancho, texto negro) */
 .team-card{
@@ -347,11 +361,10 @@ figure {
   background: rgba(255,255,255,0.5);
 }
 
-/* Nombre/rol */
+/* Nombre/rol (delgado) */
 .team-name{
-  font-family: ui-sans-serif, system-ui, sans-serif;
   font-size: 1.45rem;
-  font-weight: 900;
+  font-weight: 300;   /* antes 900 */
   margin: 0.2rem 0 0.5rem;
   color: #062233;
 }
@@ -359,23 +372,21 @@ figure {
   .team-name{ color: #FFFFFF; }
 }
 
-/* Texto fuerte dentro de card */
+/* Texto fuerte dentro de card (pero delgado) */
 .team-card strong{
-  font-weight: 800;
   color: #062233;
 }
 @media (prefers-color-scheme: dark){
   .team-card strong{ color: #D7E6F0; }
 }
 
-/* Botón (acentos intensos) */
+/* Botón (mantiene estilo, pero sin negrita) */
 .team-button{
   display: inline-block;
   margin-top: 1.2rem;
   padding: .65rem 1.4rem;
   border-radius: 14px;
-  font-weight: 900;
-  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-weight: 300; /* antes 900 */
   background: #00C896; /* verde intenso para diferenciar */
   color: #0A1F2C;
   text-align: center;
@@ -412,6 +423,7 @@ figure {
     background: #00D4FF; /* cyan brillante */
     color: #0A0F14;
     box-shadow: 0 10px 22px rgba(0,212,255,0.18);
+    font-weight: 300; /* asegura delgado */
   }
 
   .team-button:hover{
@@ -421,9 +433,15 @@ figure {
 }
 
 
+
 /* ------ EQUIPO FLOTANTE ----- */
 
-
+/* ===== Tipografía uniforme como NAVBAR ===== */
+#teamModal,
+#teamModal *{
+  font-family: var(--bs-font-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif) !important;
+  font-weight: 300; /* delgado por defecto */
+}
 
 /* ===== Ocultar detalles (pero que existan para copiar al modal) ===== */
 .team-details-hidden{
@@ -442,7 +460,7 @@ figure {
 /* ===== Modal MÁS ANCHO en desktop ===== */
 @media (min-width: 992px){
   #teamModal .modal-lg{
-    max-width: 1100px; /* ajusta 1050-1200 si quieres más/menos */
+    max-width: 1100px; /* ajusta 1050-1200 si quieres */
   }
 }
 
@@ -456,29 +474,31 @@ figure {
   justify-content: space-between;
 }
 
+/* Wrapper título/rol */
 .team-modal-titlewrap{
   display: flex;
   flex-direction: column;
   gap: .15rem;
 }
 
-/* Título del modal (nombre) un poco más controlado */
+/* Título del modal (nombre) — delgado */
 .team-modal-title{
-  font-weight: 900;
-  font-size: 1.15rem;  /* antes 1.35rem */
+  font-weight: 300 !important; /* antes 900 */
+  font-size: 1.15rem;
   line-height: 1.15;
   color: #071318;
+  letter-spacing: .2px;
 }
 
-/* Rol del modal (consultor/consultora) más pequeño */
+/* Rol del modal — delgado */
 .team-modal-role{
-  font-weight: 800;
+  font-weight: 300 !important; /* antes 800 */
   font-size: 0.95rem;
   opacity: .9;
   color: #071318;
 }
 
-/* Botón X más grande */
+/* Botón X */
 .team-modal-close{
   width: 1.2rem;
   height: 1.2rem;
@@ -493,7 +513,7 @@ figure {
 /* Layout interno: foto + contenido */
 .team-modal-grid{
   display: grid;
-  grid-template-columns: 300px 1fr; /* antes 260px */
+  grid-template-columns: 300px 1fr;
   gap: 1.2rem;
   align-items: start;
 }
@@ -501,7 +521,7 @@ figure {
 /* Foto */
 .team-modal-photo{
   width: 100%;
-  height: 300px; /* antes 260px */
+  height: 300px;
   border-radius: 16px;
   object-fit: cover;
   box-shadow: 0 10px 24px rgba(0,0,0,.14);
@@ -509,34 +529,62 @@ figure {
 
 /* ===== Contenido (perfil): letra más pequeña + justificado ===== */
 .team-modal-content{
-  font-size: 0.98rem;  /* reduce la “gigante” */
+  font-size: 0.98rem;
   line-height: 1.55;
+  font-weight: 300;
 }
 
-/* Justificación (párrafos y listas) */
+/* Justificación */
 .team-modal-content p,
 .team-modal-content li{
   text-align: justify;
   text-justify: inter-word;
 }
 
-/* Títulos internos del contenido (Perfil / Especialidades / etc.) */
+/* Títulos internos del contenido (Perfil / Especialidades / etc.) — delgado */
 .team-modal-content h3{
   margin: .25rem 0 .55rem 0;
-  font-weight: 900;
-  font-size: 1.05rem; /* evita que crezca demasiado */
+  font-weight: 300 !important; /* antes 900 */
+  font-size: 1.05rem;
+  letter-spacing: .15px;
+}
+
+/* Si Quarto te mete h4/h5 dentro del detalle */
+.team-modal-content h4,
+.team-modal-content h5{
+  font-weight: 300 !important;
 }
 
 /* Listas */
 .team-modal-content ul{
   margin-bottom: .9rem;
+  padding-left: 1.15rem;
 }
 
-/* ===== Scroll interno: evita que el modal se “alargue” demasiado ===== */
+/* Links dentro del modal: elegantes */
+.team-modal-content a{
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,.25);
+}
+@media (prefers-color-scheme: dark){
+  .team-modal-content a{
+    border-bottom-color: rgba(255,255,255,.28);
+  }
+}
+
+/* ===== Scroll interno: evita que el modal se alargue demasiado ===== */
 .team-modal-right{
   max-height: 70vh;
   overflow: auto;
   padding-right: .25rem;
+}
+
+/* ===== DARK MODE: asegura contraste en header ===== */
+@media (prefers-color-scheme: dark){
+  .team-modal-title,
+  .team-modal-role{
+    color: #071318; /* sobre celeste sigue bien */
+  }
 }
 
 /* Responsive */
@@ -554,14 +602,46 @@ figure {
   }
 }
 
-/* Botón de tus tarjetas */
+/* Botón de tus tarjetas (solo si quieres que acá también sea delgado) */
 .team-button{
   display: inline-block;
   border: 0;
   padding: .7rem 1.25rem;
   border-radius: 12px;
-  font-weight: 900;
+  font-weight: 300; /* antes 900 */
   cursor: pointer;
 }
 
+/* --- E Q U I P O --- EXCEPCIONES */
+
+/* ===== 1) Base del modal delgada (SI quieres mantenerla) ===== */
+#teamModal,
+#teamModal *{
+  font-family: var(--bs-font-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif) !important;
+  font-weight: 300 !important;  /* esto domina todo */
+}
+
+/* ===== 2) EXCEPCIONES en NEGRITA (lo que tú necesitas) ===== */
+
+/* Nombre (si lo tienes con .team-name dentro del contenido copiado) */
+#teamModal .team-name{
+  font-weight: 600 !important;
+}
+
+/* Rol (Consultor/Consultora/Colaborador) */
+#teamModal .team-modal-role{
+  font-weight: 600 !important;
+}
+
+/* Títulos internos: Perfil, Áreas de trabajo, Formación, etc. (h3 del detalle) */
+#teamModal .team-modal-content h3,
+#teamModal .team-detail h3{
+  font-weight: 600 !important;
+}
+
+/* Si dentro del detalle usas **negrita** en texto (strong/b) */
+#teamModal .team-modal-content strong,
+#teamModal .team-modal-content b{
+  font-weight: 600 !important;
+}
 
