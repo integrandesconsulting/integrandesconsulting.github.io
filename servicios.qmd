@@ -1,3 +1,39 @@
 ---
 title: "Servicios"
+page-layout: full
+toc: false
 ---
+
+::: {.callout-note collapse="true" appearance="simple" icon="false"}
+# Consultoría en analítica de datos y de información geoespacial
+
+- Identificación de patrones espaciales
+- Desarrollo de dashboards y visualizaciones de datos en 2D, 3D e interactivos
+- Análisis exploratorio de datos
+- Análisis de imágenes satelitales
+- Visualización de soluciones en la web
+- Webscraping de información
+:::
+
+::: {.callout-note collapse="true" appearance="simple" icon="false"}
+# Consultoría en gestión del riesgo de desastres
+
+- Formulación y evaluación de planes de gestión del riesgo de desastres
+- Capacitaciones en gestión del riesgo de desastres
+- Monitoreo y análisis de indicadores de gestión del riesgo de desastres
+:::
+
+::: {.callout-note collapse="true" appearance="simple" icon="false"}
+# Asesoría académica y en investigación
+
+Estrategias y herramientas para:
+
+- Selección de tema de investigación
+- Elaboración y ejecución de la propuesta de investigación
+- Gestión y análisis de información
+- Análisis de datos
+- Presentaciones académicas
+- Redacción
+- Optimizar el aprendizaje
+- Organización del tiempo
+:::

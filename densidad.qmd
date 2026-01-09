@@ -1,0 +1,43 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+## Departamentos
+
+```{=html}
+<div class="accordion densidad-acc" id="densidadAccordion">
+
+  <!-- =======================
+       DEPARTAMENTO DE PIURA
+       ======================= -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="hPiura">
+      <button class="accordion-button" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#cPiura"
+              aria-expanded="true"
+              aria-controls="cPiura">
+        Departamento de Piura
+      </button>
+    </h2>
+
+    <div id="cPiura"
+         class="accordion-collapse collapse show"
+         aria-labelledby="hPiura"
+         data-bs-parent="#densidadAccordion">
+
+      <div class="accordion-body densidad-body">
+```
+
+::: {.columns .densidad-grid}
+::: {.column width="50%"}
+
+![](images/densidad/piura.png){.densidad-img fig-alt="Densidad de población en el departamento de Piura"}
+
+:::
+
+::: {.column width="50%"}
+
+<div class="densidad-video"> <iframe src="https://www.youtube-nocookie.com/embed/5SgZ25M1ML0?rel=0" title="Video: Densidad de población - Piura" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe> </div> ::: :::

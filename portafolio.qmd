@@ -29,7 +29,7 @@ format: html
     </a>
 
     <!-- ✅ Item 3 -->
-    <a class="portfolio-card" href="densidad-3d.qmd">
+    <a class="portfolio-card" href="https://integrandesconsulting.github.io/densidad.html">
       <img class="portfolio-thumb" src="images/portafolio/espacial3d.png" alt="Densidad 3D Perú">
       <div class="portfolio-body">
         <div class="portfolio-title">Visualización espacial 3D de densidad poblacional en el Perú</div>

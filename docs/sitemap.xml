@@ -2,19 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://integrandesconsulting.github.io/servicios.html</loc>
-    <lastmod>2026-01-06T22:04:54.823Z</lastmod>
+    <lastmod>2026-01-09T22:34:24.116Z</lastmod>
   </url>
   <url>
     <loc>https://integrandesconsulting.github.io/index.html</loc>
     <lastmod>2026-01-08T21:18:53.642Z</lastmod>
   </url>
   <url>
-    <loc>https://integrandesconsulting.github.io/contacto.html</loc>
-    <lastmod>2026-01-08T22:12:27.708Z</lastmod>
+    <loc>https://integrandesconsulting.github.io/densidad.html</loc>
+    <lastmod>2026-01-09T23:24:55.527Z</lastmod>
   </url>
   <url>
     <loc>https://integrandesconsulting.github.io/about.html</loc>
     <lastmod>2026-01-06T19:41:36.134Z</lastmod>
+  </url>
+  <url>
+    <loc>https://integrandesconsulting.github.io/contacto.html</loc>
+    <lastmod>2026-01-08T22:12:27.708Z</lastmod>
   </url>
   <url>
     <loc>https://integrandesconsulting.github.io/equipo.html</loc>
@@ -22,6 +26,6 @@
   </url>
   <url>
     <loc>https://integrandesconsulting.github.io/portafolio.html</loc>
-    <lastmod>2026-01-09T17:52:08.300Z</lastmod>
+    <lastmod>2026-01-09T23:24:55.602Z</lastmod>
   </url>
 </urlset>

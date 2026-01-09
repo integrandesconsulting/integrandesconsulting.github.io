@@ -741,5 +741,71 @@ body[data-bs-theme="dark"] .team-title,
   color: #0A1A23;
 }
 
+/* ===== SERVICIOS (Callout colapsable) ===== */
 
 
+
+/* ------- D E N S I D A D ------ */
+
+/* =========================================
+   DENSIDAD – Accordion + Imagen / Video
+   ========================================= */
+
+/* Contenedor del accordion centrado */
+.densidad-acc{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Quitar padding interno que rompe el layout */
+.densidad-body{
+  padding: 0 !important;
+}
+
+/* Columnas sin separación */
+.densidad-grid{
+  gap: 0 !important;
+}
+
+/* ===== ALTURA IGUAL (CLAVE) ===== */
+@media (min-width: 992px){
+  .densidad-grid > .column{
+    height: 520px;   /* ajusta si quieres: 480 / 560 */
+  }
+}
+
+/* Imagen ocupa todo el alto */
+.densidad-img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;   /* mantiene simetría */
+}
+
+/* Video ocupa todo el alto */
+.densidad-video{
+  width: 100%;
+  height: 100%;
+}
+
+.densidad-video iframe{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* ===== Estilo suave del accordion ===== */
+.accordion-button{
+  font-weight: 400;
+}
+
+.accordion-button:not(.collapsed){
+  background-color: rgba(20, 184, 166, 0.12); /* mint suave */
+  color: inherit;
+}
+
+.accordion-item{
+  border-radius: 8px;
+  overflow: hidden;
+}
