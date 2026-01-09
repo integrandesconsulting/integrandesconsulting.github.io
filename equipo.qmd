@@ -56,7 +56,7 @@ Ingeniera Ambiental por la Universidad Nacional de Trujillo (UNT). Cuenta con es
 ::: {.team-card}
 ![](images/tierra.gif){.team-photo}
 
-### Reyes de la Cruz Rafael {.team-name}
+### **Reyes de la Cruz Rafael** {.team-name}
 
 **Colaborador**
 

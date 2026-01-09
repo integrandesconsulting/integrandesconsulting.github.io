@@ -227,7 +227,7 @@ figure {
   border: 0 !important;
 }
 
-/* ------ E Q U I P O ------*/
+/* ------ ✅ E Q U I P O ------*/
 
 /* =========================
    EQUIPO (LIGHT/DARK + 3 columnas anchas)
@@ -643,5 +643,148 @@ figure {
 #teamModal .team-modal-content strong,
 #teamModal .team-modal-content b{
   font-weight: 600 !important;
+}
+
+
+/* ----- ✅ P  O  R  T  A  F  O  L  I  O --------*/
+
+:root {
+  --font-navbar: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.portfolio-section{
+  width: 100%;
+  padding: 2rem 0 3rem;
+  font-family: var(--font-navbar);
+}
+
+.portfolio-heading{
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-family: var(--font-navbar);
+  color: #0A1A23;
+}
+
+.portfolio-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-family: var(--font-navbar);
+}
+
+@media (max-width: 900px){
+  .portfolio-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px){
+  .portfolio-grid{ grid-template-columns: 1fr; }
+}
+
+.portfolio-card{
+  display: block;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  font-family: var(--font-navbar);
+  color: #0A1A23;
+}
+
+.portfolio-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.11);
+}
+
+.portfolio-thumb{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.portfolio-body{
+  padding: 0.9rem 1rem 1rem;
+  font-family: var(--font-navbar);
+}
+
+.portfolio-title{
+  font-size: 1.05rem;
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+  font-weight: 400;
+  font-family: var(--font-navbar);
+  color: #0A1A23;
+}
+
+.portfolio-desc{
+  font-size: 0.93rem;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-navbar);
+  font-weight: 400;
+  opacity: 0.85;
+  color: #0A1A23;
+}
+
+.portfolio-badge{
+  display: inline-block;
+  font-size: 0.78rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(15,120,160,0.13);
+  font-family: var(--font-navbar);
+  font-weight: 400;
+  color: #0A1A23;
+}
+
+/* =========================
+   DARK MODE (CONTRASTE MEJORADO)
+   ========================= */
+
+@media (prefers-color-scheme: dark){
+  body {
+    background: #0D1117 !important;
+    color: #ffffff !important;
+    font-family: var(--font-navbar);
+  }
+
+  .portfolio-heading {
+    color: #ffffff !important;
+    font-weight: 400;
+  }
+
+  .portfolio-card {
+    background: rgba(255,255,255,0.05) !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+  }
+
+  .portfolio-title {
+    color: #ffffff !important;
+  }
+
+  .portfolio-desc {
+    color: #e6e6e6 !important; /* gris claro legible */
+    opacity: 1 !important;
+  }
+
+  .portfolio-badge {
+    background: rgba(80,160,255,0.22) !important;
+    color: #ffffff !important;
+  }
+
+  /* Si quieres marcar items "disponibles" con clase is-ready */
+  .portfolio-badge.is-ready {
+    background: rgba(120,255,190,0.22) !important;
+    color: #ffffff !important;
+  }
 }
 
