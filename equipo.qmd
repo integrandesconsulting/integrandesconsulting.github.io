@@ -82,13 +82,11 @@ Estudiante de ingeniería civil de la UNI
 ::: {.team-details-hidden}
 
 ::: {#details-juan .team-detail}
-### Euación
+### Educación
 - Alumno del **Advanced Program** in **Data Science & Global Skills** 
-Aporta y MIT IDSS (Massachusetts Institute of Technology -Institute for Data, Systems and Society), en curso.
-- Mag. Ingeniería Civil
-Pontificia Universidad Católica del Perú, 2019.
-- BSc. en Ingeniería Civil
-Universidad Nacional de Ingeniería, 2016.
+Aporta y MIT IDSS (Massachusetts Institute of Technology - Institute for Data, Systems and Society), en curso.
+- Mag. Ingeniería Civil - Pontificia Universidad Católica del Perú, 2019.
+- BSc. en Ingeniería Civil - Universidad Nacional de Ingeniería, 2016.
 
 ### Temas de interés
 - Planificación y desarrollo territorial
@@ -109,21 +107,25 @@ Universidad Nacional de Ingeniería, 2016.
 
 ::: {#details-lourdes .team-detail}
 ### Educación
-Ingeniera Ambiental (UNT), con estudios de maestría en Tratamiento de aguas y desechos (UNI). Integra herramientas digitales para mejorar análisis, reportes y comunicación de resultados.
+- Desarrollo web - Platzi-Proinnovate, 2022
+- Estudios de maestría en Tratamiento de aguas y reúso de desechos - Universidad Nacional de Ingeniería, 2019
+- Ingeniera ambiental - Universidad Nacional de Trujillo, 2011
 
 ### Temas de interés
-- Tratamiento de aguas y residuos.
-- Gestión ambiental y soporte técnico.
-- Herramientas digitales para análisis y reportes.
+- Ciencia de datos aplicada a parámetros ambientales
+- Modelos de contaminación ambiental
+- Tratamiento de aguas contaminadas
 
 ### Experiencia
-- Maestría (estudios) – UNI (Tratamiento de aguas y desechos).
-- Becas/cursos en Desarrollo web: Platzi y Proinnovate.
+- Desarrollo de instrumentos de gestión ambiental
+- Desarrollo de mapas y planos
+- Monitoreo de parámetros hidrológicos
+- Monitoreo de parámetros de calidad de agua y suelo
 :::
 
 ::: {#details-rafael .team-detail}
 ### Perfil
-Colaborador enfocado en soporte, documentación y elaboración de contenido escrito. Apoya la comunicación técnica y el orden de información del equipo.
+Colaborador enfocado en soporte, documentación y elaboración de contenido. Apoya la comunicación técnica y el orden de información del equipo.
 
 ### Contribuciones
 - Ensayos y redacción.
