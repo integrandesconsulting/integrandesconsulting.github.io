@@ -258,22 +258,20 @@ figure {
   font-weight: normal; /* ✔️ no fuerza delgado, deja que strong y clases funcionen */
 }
 
-/* Título centrado y elegante (pero con tipografía del navbar y delgado) */
+/* Título Equipo: visible en Minty (light) */
 .team-title{
   text-align: center;
   font-size: 3.2rem;
-  font-weight: 300;            /* antes 900 */
+  font-weight: 300;
   margin: 2.2rem 0 1.3rem;
-  color: #0A1F2C;
+  color: #0A1F2C; /* oscuro: se ve en fondo claro */
 }
 
-@media (prefers-color-scheme: dark){
-  .team-title{
-    color: #F2FAFF !important;   /* blanco */
-  }
-  .team-title::after{
-    background: rgba(242,250,255,.20) !important;
-  }
+/* SOLO cuando el sitio está en tema oscuro (Darkly/Quarto dark) */
+html[data-bs-theme="dark"] .team-title,
+body[data-bs-theme="dark"] .team-title,
+.quarto-dark .team-title{
+  color: #F2FAFF !important; /* blanco: se ve en fondo oscuro */
 }
 
 /* Grilla 3 columnas anchas en desktop */
