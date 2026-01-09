@@ -237,8 +237,7 @@ figure {
 .page-equipo{
   background: #E8F3FF;
 }
-@media (prefers-color-scheme: dark){
-  .page-equipo{ background: #0D1117; }
+
 }
 
 /* ===== Tipografía uniforme como NAVBAR (Bootstrap) =====
@@ -744,47 +743,5 @@ figure {
   color: #0A1A23;
 }
 
-/* =========================
-   DARK MODE (CONTRASTE MEJORADO)
-   ========================= */
 
-@media (prefers-color-scheme: dark){
-  body {
-    background: #0D1117 !important;
-    color: #ffffff !important;
-    font-family: var(--font-navbar);
-  }
-
-  .portfolio-heading {
-    color: #ffffff !important;
-    font-weight: 400;
-  }
-
-  .portfolio-card {
-    background: rgba(255,255,255,0.05) !important;
-    border: 1px solid rgba(255,255,255,0.15) !important;
-    color: #ffffff !important;
-    box-shadow: none !important;
-  }
-
-  .portfolio-title {
-    color: #ffffff !important;
-  }
-
-  .portfolio-desc {
-    color: #e6e6e6 !important; /* gris claro legible */
-    opacity: 1 !important;
-  }
-
-  .portfolio-badge {
-    background: rgba(80,160,255,0.22) !important;
-    color: #ffffff !important;
-  }
-
-  /* Si quieres marcar items "disponibles" con clase is-ready */
-  .portfolio-badge.is-ready {
-    background: rgba(120,255,190,0.22) !important;
-    color: #ffffff !important;
-  }
-}
 
