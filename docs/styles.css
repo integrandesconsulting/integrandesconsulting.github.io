@@ -744,50 +744,91 @@ body[data-bs-theme="dark"] .team-title,
 /* ===== SERVICIOS (Callout colapsable) ===== */
 
 
-
 /* ------- D E N S I D A D ------ */
 
+
+---
+
+## 2) `styles.css` (pega este bloque)
+
+```css
 /* =========================================
-   DENSIDAD – Accordion + Imagen / Video
+   Página Densidades: ancho normal (no full)
+   y estilo acorde a Minty/Darkly
    ========================================= */
 
-/* Contenedor del accordion centrado */
+/* Breadcrumbs sencillos como en tu captura */
+.breadcrumbs{
+  font-size: 0.9rem;
+  opacity: .8;
+  margin: 0.5rem 0 1rem;
+}
+.breadcrumbs .sep{ margin: 0 0.4rem; }
+
+/* =========================================
+   Accordion + Grid (Imagen | Video)
+   ========================================= */
+
 .densidad-acc{
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
 }
 
-/* Quitar padding interno que rompe el layout */
+/* Compacto: sin “espacio molesto” */
+.densidad-acc .accordion-header{ margin-bottom: 0 !important; }
+
+.densidad-acc .accordion-button{
+  font-weight: 400;
+  padding-top: .85rem;
+  padding-bottom: .85rem;
+  margin: 0 !important;
+  border-bottom: 0 !important;
+}
+
+/* Color que combina con Minty/Darkly */
+.densidad-acc .accordion-button:not(.collapsed){
+  background-color: rgba(20, 184, 166, 0.12);
+  color: inherit;
+}
+
+/* Cuerpo sin padding para que los gráficos “peguen” */
 .densidad-body{
   padding: 0 !important;
 }
+.densidad-acc .accordion-body > *:first-child{
+  margin-top: 0 !important;
+}
 
-/* Columnas sin separación */
+/* Grid: 1 columna móvil, 2 columnas desktop */
 .densidad-grid{
-  gap: 0 !important;
+  display: grid;
+  grid-template-columns: 1fr;
 }
-
-/* ===== ALTURA IGUAL (CLAVE) ===== */
 @media (min-width: 992px){
-  .densidad-grid > .column{
-    height: 520px;   /* ajusta si quieres: 480 / 560 */
-  }
+  .densidad-grid{ grid-template-columns: 1fr 1fr; }
 }
 
-/* Imagen ocupa todo el alto */
+/* Panel común */
+.densidad-panel{
+  width: 100%;
+  overflow: hidden;
+  background: #111;
+}
+
+/* Misma altura en desktop */
+@media (min-width: 992px){
+  .densidad-panel{ height: 520px; }
+}
+
+/* Imagen */
 .densidad-img{
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;   /* mantiene simetría */
+  object-fit: cover;
 }
 
-/* Video ocupa todo el alto */
-.densidad-video{
-  width: 100%;
-  height: 100%;
-}
-
+/* Video */
+.densidad-video{ width: 100%; height: 100%; }
 .densidad-video iframe{
   width: 100%;
   height: 100%;
@@ -795,17 +836,9 @@ body[data-bs-theme="dark"] .team-title,
   display: block;
 }
 
-/* ===== Estilo suave del accordion ===== */
-.accordion-button{
-  font-weight: 400;
-}
-
-.accordion-button:not(.collapsed){
-  background-color: rgba(20, 184, 166, 0.12); /* mint suave */
-  color: inherit;
-}
-
-.accordion-item{
-  border-radius: 8px;
-  overflow: hidden;
+/* Móvil: video 16:9 */
+@media (max-width: 991.98px){
+  .densidad-panel{ height: auto; }
+  .densidad-video{ aspect-ratio: 16 / 9; }
+  .densidad-video iframe{ height: 100%; }
 }
