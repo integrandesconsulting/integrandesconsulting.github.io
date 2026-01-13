@@ -2,6 +2,7 @@
 title: ""
 page-layout: full
 toc: false
+body-class: page-index
 format:
   html:
     css: styles.css
