@@ -593,9 +593,7 @@ body[data-bs-theme="dark"] .team-title,
 }
 
 
-
-
-/* ----- ✅ P O R T A F O L I O --------*/
+/* ----- ✅ P O R T A F O L I O (Sandstone / Darkly) --------*/
 
 .portfolio-section{
   width: 100%;
@@ -609,7 +607,7 @@ body[data-bs-theme="dark"] .team-title,
   font-weight: 400;
   margin-bottom: 2rem;
   font-family: var(--font-navbar);
-  color: #0A1A23;
+  color: var(--bs-body-color);
 }
 
 .portfolio-grid{
@@ -629,22 +627,33 @@ body[data-bs-theme="dark"] .team-title,
   .portfolio-grid{ grid-template-columns: 1fr; }
 }
 
+/* ======================================================
+   CARD – SANDSTONE / LIGHT (UTEC CELESTE)
+   ====================================================== */
+
 .portfolio-card{
-  display: block;
-  background: #fff;
+  display: flex;              /* ← CAMBIO */
+  flex-direction: column;     /* ← NUEVO */
   border-radius: 16px;
   overflow: hidden;
   text-decoration: none;
-  border: 1px solid rgba(0,0,0,0.06);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.07);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
   font-family: var(--font-navbar);
-  color: #0A1A23;
+  /* … tus colores actuales NO se tocan … */
+}
+
+  /* 🎓 UTEC Light */
+  background: #cfeeff;                 /* celeste UTEC */
+  border: 1px solid rgba(20, 80, 110, 0.18);
+  color: #0e2a38;
+
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 
 .portfolio-card:hover{
   transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.11);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+  border-color: rgba(20, 80, 110, 0.30);
 }
 
 .portfolio-thumb{
@@ -657,6 +666,10 @@ body[data-bs-theme="dark"] .team-title,
 .portfolio-body{
   padding: 0.9rem 1rem 1rem;
   font-family: var(--font-navbar);
+
+  display: flex;              /* ← NUEVO */
+  flex-direction: column;     /* ← NUEVO */
+  flex-grow: 1;               /* ← CLAVE */
 }
 
 .portfolio-title{
@@ -664,30 +677,81 @@ body[data-bs-theme="dark"] .team-title,
   line-height: 1.25;
   margin-bottom: 0.4rem;
   font-weight: 500;
-  font-family: var(--font-navbar);
-  color: #0A1A23;
+  color: #0e2a38;
 }
 
 .portfolio-desc{
   font-size: 0.93rem;
   line-height: 1.3;
   margin-bottom: 0.75rem;
-  font-family: var(--font-navbar);
   font-weight: 400;
-  opacity: 0.85;
-  color: #0A1A23;
+  color: rgba(14, 42, 56, 0.75);
 }
 
+/* 🏷️ Badge – celeste UTEC metálico (LIGHT) */
 .portfolio-badge{
   display: inline-block;
   font-size: 0.78rem;
-  padding: 0.25rem 0.55rem;
+  padding: 0.25rem 0.6rem;
   border-radius: 999px;
-  background: rgba(15,120,160,0.13);
-  font-family: var(--font-navbar);
   font-weight: 400;
-  color: #0A1A23;
+  margin-top: auto;           /* ← LO FIJA ABAJO */
+  align-self: flex-start;     /* ← alineado a la izquierda */
+
+  /* Celeste UTEC visible */
+  background: linear-gradient(
+    180deg,
+    #e6f6ff 0%,
+    #bfe9ff 100%
+  );
+
+  border: 1px solid rgba(0, 110, 160, 0.45);
+  color: #0a3a55;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.65),
+    0 1px 2px rgba(0,0,0,0.12);
 }
+
+
+/* ======================================================
+   DARKLY – UTEC DARK (PLOMO)
+   ====================================================== */
+
+@media (prefers-color-scheme: dark){
+
+  .portfolio-card{
+    background: #2b2f33;               /* plomo UTEC */
+    border-color: rgba(120, 180, 210, 0.22);
+    color: #eef4f8;
+    box-shadow: 0 14px 34px rgba(0,0,0,0.55);
+  }
+
+  .portfolio-card:hover{
+    box-shadow: 0 18px 40px rgba(0,0,0,0.70);
+    border-color: rgba(120, 180, 210, 0.38);
+  }
+
+  .portfolio-title{
+    color: #f2f7fb;
+  }
+
+  .portfolio-desc{
+    color: rgba(242, 247, 251, 0.78);
+  }
+
+  /* 🏷️ Badge – celeste técnico (dark) */
+  .portfolio-badge{
+    background: linear-gradient(
+      180deg,
+      rgba(120,180,210,0.25),
+      rgba(120,180,210,0.12)
+    );
+    border-color: rgba(120,180,210,0.35);
+    color: #eaf4fb;
+  }
+}
+
 
 /* ------- D E N S I D A D ------ */
 
@@ -713,16 +777,27 @@ body[data-bs-theme="dark"] .team-title,
 
 .densidad-acc .accordion-header{ margin: 0 !important; }
 
+/* ✅ Header del acordeón: celeste/azul (como tu barra superior) */
 .densidad-acc .accordion-button{
   font-weight: 400;
   padding: .85rem 1rem;
   margin: 0 !important;
   box-shadow: none !important;
+
+  background: #355D82;     /* 👈 cambia aquí si quieres otro tono */
+  color: #fff;
 }
 
+/* Misma barra cuando está abierto */
 .densidad-acc .accordion-button:not(.collapsed){
-  background-color: rgba(20, 184, 166, 0.14);
-  color: inherit;
+  background: #355D82;     /* 👈 antes era verdoso */
+  color: #fff;
+}
+
+/* Flecha en blanco */
+.densidad-acc .accordion-button::after{
+  filter: brightness(0) invert(1);
+  opacity: .95;
 }
 
 .densidad-body{ padding: 0 !important; }
@@ -746,15 +821,17 @@ body[data-bs-theme="dark"] .team-title,
   background: var(--bs-body-bg);
 }
 
+/* ✅ Altura común para imagen y video (controla el tamaño general aquí) */
 @media (min-width: 992px){
   .densidad-panel{
-    height: 520px;
+    height: 320px;                /* 👈 sube a 420/520 si lo quieres más grande */
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
 
+/* Imagen */
 .densidad-panel-img .densidad-img{
   max-height: 100%;
   width: 100%;
@@ -762,12 +839,71 @@ body[data-bs-theme="dark"] .team-title,
   object-fit: contain;
 }
 
-.densidad-panel-video iframe{
-  width: 100%;
-  height: 100% !important;
-  max-height: 100%;
-  border: 0;
+
+/* Contenedor del video: solo centra y mantiene la caja */
+.densidad-panel-video{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;                 /* no crece ni rompe bordes */
+  
+  /* 🔧 Diales de ajuste interno del video */
+  --yt-scale: 1.03;                 /* zoom interno (1 = sin zoom) */
+  --yt-y: 4px;                      /* desplazamiento vertical fino */
 }
 
+/* Iframe ocupa EXACTAMENTE la misma caja que la imagen */
+.densidad-panel-video iframe{
+  width: 100%;
+  height: 100% !important;          /* 👈 clave: igual altura que la imagen */
+  border: 0;
+  display: block;
 
+  /* Zoom interno SIN mover la caja */
+  transform: scale(var(--yt-scale)) translateY(var(--yt-y));
+  transform-origin: center;
+}
+
+/* =========================
+   CALLOUT INFORMATIVO (fuera del feedback)
+   ========================= */
+
+.densidad-callout{
+  max-width: 1100px;
+  margin: 2rem auto 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+
+  background: rgba(53, 93, 130, 0.08);
+  border: 2px solid rgba(53, 93, 130, 0.45);
+
+  text-align: center;
+}
+
+.densidad-callout-text{
+  font-size: 1rem;
+  line-height: 1.45;
+  margin-bottom: .35rem;
+}
+
+.densidad-callout-mail{
+  font-size: .95rem;
+}
+
+.densidad-callout a{
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.densidad-callout a:hover{
+  text-decoration: underline;
+}
+
+/* Dark mode fino */
+@media (prefers-color-scheme: dark){
+  .densidad-callout{
+    background: rgba(53, 93, 130, 0.18);
+    border-color: rgba(53, 93, 130, 0.65);
+  }
+}
 

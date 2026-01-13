@@ -2,6 +2,7 @@
 title: "Portafolio de recursos"
 page-layout: full
 toc: false
+body-class: page-portafolio
 format: html
 ---
 
@@ -9,7 +10,7 @@ format: html
   <div class="portfolio-grid">
 
     <!-- ✅ Item 1 -->
-    <a class="portfolio-card" href="recursos-gestion-riesgo.qmd">
+    <a class="portfolio-card" href="https://jurteagat.notion.site/Toolkit-Gesti-n-Comunitaria-del-Riesgo-de-Desastres-45e7d495c732473d8a15e1a30a7e2255">
       <img class="portfolio-thumb" src="images/portafolio/recursosnotion.png" alt="Gestión comunitaria del riesgo">
       <div class="portfolio-body">
         <div class="portfolio-title">Recursos de gestión comunitaria del riesgo de desastres</div>

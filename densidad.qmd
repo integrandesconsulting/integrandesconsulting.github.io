@@ -5,8 +5,8 @@ toc: false
 body-class: page-densidad
 ---
 <div class="breadcrumbs"> <span>Portafolio</span> <span class="sep">></span> <span>Visualización espacial 3D de la densidad poblacional en el Perú</span> <span class="sep">></span> </div>
-Densidades poblacionales en el Perú
-Iniciativa
+## Densidades poblacionales en el Perú
+### Iniciativa
 
 La base de datos de Kontur sobre población mundial, es una de las fuentes de libre acceso más actualizadas en el campo demográfico. Si bien fue originalmente pensada para su uso en situaciones de emergencia y desastre de gran escala, el utilizar y solicitar mejoras a esta base de datos puede ayudar a resolver muchos más problemas claves en el ámbito territorial.
 
@@ -14,7 +14,7 @@ Por todo ello, estaremos desarrollando para cada departamento una visualización
 
 Avanzaremos poco a poco, ¡departamento por departamento...!
 
-Departamentos
+### Departamentos:
 
 ```{=html}
 <div class="accordion densidad-acc" id="densidadAccordion">
@@ -78,7 +78,7 @@ Departamentos
 
       <div class="densidad-panel densidad-panel-video">
         <iframe
-          src="https://www.youtube-nocookie.com/embed/VIDEO_ID_CUSCO?rel=0"
+          src="https://www.youtube-nocookie.com/embed/S4UjNK-A_dw?rel=0" title="YouTube video player" frameborder=0
           title="Video: Densidad de población - Cusco"
           loading="lazy"
           referrerpolicy="strict-origin-when-cross-origin"
@@ -114,7 +114,7 @@ Departamentos
 
       <div class="densidad-panel densidad-panel-video">
         <iframe
-          src="https://www.youtube-nocookie.com/embed/VIDEO_ID_LALIBERTAD?rel=0"
+          src="https://www.youtube-nocookie.com/embed/-vmdKCscjUM?rel=0"
           title="Video: Densidad de población - La Libertad"
           loading="lazy"
           referrerpolicy="strict-origin-when-cross-origin"
@@ -150,7 +150,7 @@ Departamentos
 
       <div class="densidad-panel densidad-panel-video">
         <iframe
-          src="https://www.youtube-nocookie.com/embed/VIDEO_ID_JUNIN?rel=0"
+          src="https://www.youtube-nocookie.com/embed/4TKtegBKX6Q?rel=0"
           title="Video: Densidad de población - Junín"
           loading="lazy"
           referrerpolicy="strict-origin-when-cross-origin"
@@ -187,7 +187,7 @@ Departamentos
 
       <div class="densidad-panel densidad-panel-video">
         <iframe
-          src="https://www.youtube-nocookie.com/embed/VIDEO_ID_SANMARTIN?rel=0"
+          src="https://www.youtube-nocookie.com/embed/9i3BIlR1gqc?rel=0"
           title="Video: Densidad de población - San Martín"
           loading="lazy"
           referrerpolicy="strict-origin-when-cross-origin"
@@ -200,27 +200,58 @@ Departamentos
 
 
   </div>
-
-  <!-- FEEDBACK -->
+  
+   <!-- FEEDBACK -->
 
   <div class="accordion-item">
     <h2 class="accordion-header" id="hFeedback">
       <button class="accordion-button collapsed" type="button"
               data-bs-toggle="collapse" data-bs-target="#cFeedback"
               aria-expanded="false" aria-controls="cFeedback">
-        Feedback sobre la base de datos
+        Feedback sobre la iniciativa y la base de datos
       </button>
     </h2>
 
+    <div id="cFeedback" class="accordion-collapse collapse"
+         aria-labelledby="hFeedback" data-bs-parent="#densidadAccordion">
 
-<div id="cFeedback" class="accordion-collapse collapse"
-     aria-labelledby="hFeedback" data-bs-parent="#densidadAccordion">
-  <div class="accordion-body">
-    <p>Aquí puedes colocar tu formulario o un enlace para enviar sugerencias sobre la base de datos.</p>
+      <div class="accordion-body densidad-body">
+
+          <p>
+            Agradecemos que te tomes unos minutos para dejarnos tus comentarios
+            sobre la visualización, el departamento analizado y la base de datos utilizada.
+          </p>
+        </div>
+
+        <!-- Formulario Google Forms embebido -->
+        <div class="densidad-form-wrap">
+          <iframe
+            class="densidad-form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdqN79o4XunvftVVX-pXWjwZsKu_hpVL-2zZp5Cny_aGtD3OA/viewform?embedded=true"
+            width="100%"
+            height="1050"
+            style="border:none; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.10);"
+            loading="lazy">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+<!-- TARJETA INFORMATIVA / SERVICIO EXTRA -->
+
+<div class="densidad-callout">
+  <div class="densidad-callout-text">
+    Si deseas imagénes con mayor resolución (&gt;50&nbsp;MB)
+    o con un estilo más personalizado, ¡podemos ofrecerte ese servicio!
+  </div>
+  <div class="densidad-callout-mail">
+    Escríbenos a
+    <a href="mailto:integrandes.consulting@gmail.com">
+      integrandes.consulting@gmail.com
+    </a>
   </div>
 </div>
-
-  </div>
-
-</div>
+  
 ```
