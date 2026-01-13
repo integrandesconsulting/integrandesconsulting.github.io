@@ -152,84 +152,70 @@ main.content {
   font-weight: 500;
 }
 
-/* =========================
-   4) TARJETA PRINCIPIOS */
-.card-soft {
+/* =========================================================
+   CARD-SOFT – recuperar aire + línea bajo el título
+   ========================================================= */
+
+.card-soft{
   width: 100%;
-  padding: 1.5rem;
-  text-align: left;
-  background: #eef2ff;
-  color: #111;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.8rem 2rem;          /* ✅ más aire (antes estaba apretado) */
+  border-radius: 18px;
+  box-shadow: 0 10px 22px rgba(0,0,0,.14);  /* ✅ como antes, más presente */
 }
 
-.card-soft h2 {
-  margin: 0 0 0.65rem 0;
-  font-size: 1.55rem;
+/* Título con separador */
+.card-soft h2{
+  margin: 0 0 1rem 0;
+  padding-bottom: .65rem;         /* ✅ espacio para la línea */
+  border-bottom: 1px solid rgba(0,0,0,.18); /* ✅ línea en light */
   font-weight: 800;
-  color: #000;
 }
 
-.card-soft ul {
+/* Línea en dark */
+body.quarto-dark .card-soft h2,
+html[data-bs-theme="dark"] .card-soft h2{
+  border-bottom-color: rgba(255,255,255,.18);
+}
+
+/* Lista: recuperar separación */
+.card-soft ul{
   margin: 0;
-  padding-left: 1.1rem;
+  padding-left: 1.2rem;
 }
 
-.card-soft li {
-  margin: 0.55rem 0;
-  line-height: 1.35;
-  color: #333;
+.card-soft li{
+  margin: .65rem 0;              /* ✅ más separación entre bullets */
+  line-height: 1.45;
 }
 
-/* =========================
-   5) MODO OSCURO (Darkly) */
-/* =========================
-   INDEX – MODO OSCURO estilo Sandstone (azul/gris) – SOLO INDEX
-   ========================= */
+/* Light: celeste suave SOLO en index */
+html[data-bs-theme="light"] body.page-index .card-soft,
+body.quarto-dark .card-soft{
+  background-color: rgba(255,255,255,.03);
+}
 
-.page-index html[data-bs-theme="dark"] .card-soft,
-.page-index body[data-bs-theme="dark"] .card-soft,
-.page-index .quarto-dark .card-soft{
+/* Dark: plomo SOLO en index */
+html[data-bs-theme="dark"] body.page-index .card-soft,
+body.page-index.quarto-dark .card-soft,
+html.quarto-dark body.page-index .card-soft{
   background: #1f232a !important;
-  color: rgba(255,255,255,.88) !important;
-  border: 1px solid rgba(255,255,255,.10) !important;
-  box-shadow: 0 10px 24px rgba(0,0,0,.45) !important;
+  color: rgba(255,255,255,.90) !important;
+  border-color: rgba(255,255,255,.10) !important;
+  box-shadow: 0 12px 28px rgba(0,0,0,.55) !important;
 }
 
-.page-index html[data-bs-theme="dark"] .card-soft h2,
-.page-index body[data-bs-theme="dark"] .card-soft h2,
-.page-index .quarto-dark .card-soft h2{
-  color: rgba(255,255,255,.92) !important;
+html[data-bs-theme="dark"] body.page-index .card-soft h2,
+body.page-index.quarto-dark .card-soft h2,
+html.quarto-dark body.page-index .card-soft h2{
+  color: rgba(255,255,255,.96) !important;
 }
 
-.page-index html[data-bs-theme="dark"] .card-soft li,
-.page-index body[data-bs-theme="dark"] .card-soft li,
-.page-index .quarto-dark .card-soft li{
+html[data-bs-theme="dark"] body.page-index .card-soft li,
+body.page-index.quarto-dark .card-soft li,
+html.quarto-dark body.page-index .card-soft li{
   color: rgba(255,255,255,.82) !important;
 }
 
-/* Quitar verde SOLO en index (dark) */
-.page-index html[data-bs-theme="dark"] .brand-title,
-.page-index body[data-bs-theme="dark"] .brand-title,
-.page-index .quarto-dark .brand-title{
-  color: rgba(255,255,255,.92) !important;
-}
-
-.page-index html[data-bs-theme="dark"] .brand-tagline,
-.page-index body[data-bs-theme="dark"] .brand-tagline,
-.page-index .quarto-dark .brand-tagline{
-  color: rgba(255,255,255,.70) !important;
-}
-
-
-/* Asegura que ninguna etiqueta figure deje espacio */
-figure {
-  margin: 0 !important;
-  padding: 0 !important;
-  line-height: 0 !important;
-  border: 0 !important;
-}
 
 /* ------ ✅ E Q U I P O ------*/
 
