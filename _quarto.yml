@@ -42,5 +42,6 @@ format:
     css: styles.css
     toc: true
     toc-location: right
+    include-after-body: remove-toggle-title.html
 
 editor: visual

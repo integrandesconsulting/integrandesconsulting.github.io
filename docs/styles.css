@@ -18,6 +18,147 @@ html, body{
 
 /* css styles */
 
+/* =========================================================
+   QUARTO THEME TOGGLE – modelo tipo iOS (sol/luna dentro del knob)
+   Colores translúcidos según el NAVBAR (Sandstone / Darkly)
+   ========================================================= */
+
+/* 0) Oculta iconos internos del toggle nativo */
+.navbar .quarto-color-scheme-toggle svg,
+.navbar .quarto-color-scheme-toggle .bi,
+.navbar .quarto-color-scheme-toggle i{
+  display: none !important;
+}
+
+/* 1) Cápsula (track) */
+.navbar .quarto-color-scheme-toggle{
+  --tg-w: 3.05rem;
+  --tg-h: 1.55rem;
+  --tg-pad: .16rem;
+
+  width: var(--tg-w);
+  height: var(--tg-h);
+  padding: 0 !important;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  position: relative;
+  border-radius: 999px;
+
+  /* Track translúcido que “toma” el color del navbar */
+  background: color-mix(in srgb, currentColor 16%, transparent);
+  border: 1px solid color-mix(in srgb, currentColor 24%, transparent);
+
+  /* sin “borde negro duro” */
+  box-shadow: 0 6px 16px rgba(0,0,0,.10);
+}
+
+/* Fallback si el navegador no soporta color-mix */
+@supports not (background: color-mix(in srgb, #000 10%, transparent)){
+  .navbar .quarto-color-scheme-toggle{
+    background: rgba(255,255,255,.10);
+    border-color: rgba(255,255,255,.18);
+  }
+  html[data-bs-theme="light"] .navbar .quarto-color-scheme-toggle{
+    background: rgba(0,0,0,.08);
+    border-color: rgba(0,0,0,.14);
+  }
+}
+
+/* 2) Knob circular (la bolita) */
+.navbar .quarto-color-scheme-toggle::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: var(--tg-pad);
+  transform: translateY(-50%);
+
+  width: calc(var(--tg-h) - (var(--tg-pad) * 2));
+  height: calc(var(--tg-h) - (var(--tg-pad) * 2));
+  border-radius: 999px;
+
+  /* blanco “soft” tipo el modelo */
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(0,0,0,.10);
+
+  /* sensación de “flotante” */
+  box-shadow:
+    0 10px 18px rgba(0,0,0,.18),
+    0  2px  5px rgba(0,0,0,.12);
+
+  transition: left .18s ease;
+}
+
+/* 3) Ícono dentro del knob (SOL en light) */
+.navbar .quarto-color-scheme-toggle::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: var(--tg-pad);
+  transform: translateY(-50%);
+
+  width: calc(var(--tg-h) - (var(--tg-pad) * 2));
+  height: calc(var(--tg-h) - (var(--tg-pad) * 2));
+  border-radius: 999px;
+
+  /* color del icono (negro suave como el modelo) */
+  background: rgba(0,0,0,.78);
+
+  /* SOL “como el modelo” (ring + rayos) */
+  -webkit-mask: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>\
+<path fill-rule='evenodd' d='M12 7.25c-2.623 0-4.75 2.127-4.75 4.75S9.377 16.75 12 16.75s4.75-2.127 4.75-4.75S14.623 7.25 12 7.25zm0 1.8a2.95 2.95 0 1 0 0 5.9 2.95 2.95 0 0 0 0-5.9z'/>\
+<path d='M12 2.7a1 1 0 0 1 1 1v1.3a1 1 0 1 1-2 0V3.7a1 1 0 0 1 1-1zm0 16.0a1 1 0 0 1 1 1V21a1 1 0 1 1-2 0v-1.3a1 1 0 0 1 1-1zM2.7 12a1 1 0 0 1 1-1H5a1 1 0 1 1 0 2H3.7a1 1 0 0 1-1-1zm16.0 0a1 1 0 0 1 1-1H21a1 1 0 1 1 0 2h-1.3a1 1 0 0 1-1-1z'/>\
+<path d='M5.15 5.15a1 1 0 0 1 1.414 0l.92.92a1 1 0 1 1-1.414 1.414l-.92-.92a1 1 0 0 1 0-1.414zm11.366 11.366a1 1 0 0 1 1.414 0l.92.92a1 1 0 1 1-1.414 1.414l-.92-.92a1 1 0 0 1 0-1.414zM18.85 5.15a1 1 0 0 1 0 1.414l-.92.92a1 1 0 1 1-1.414-1.414l.92-.92a1 1 0 0 1 1.414 0zM7.484 16.516a1 1 0 0 1 0 1.414l-.92.92A1 1 0 1 1 5.15 17.436l.92-.92a1 1 0 0 1 1.414 0z'/>\
+</svg>") center/60% 60% no-repeat;
+          mask: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>\
+<path fill-rule='evenodd' d='M12 7.25c-2.623 0-4.75 2.127-4.75 4.75S9.377 16.75 12 16.75s4.75-2.127 4.75-4.75S14.623 7.25 12 7.25zm0 1.8a2.95 2.95 0 1 0 0 5.9 2.95 2.95 0 0 0 0-5.9z'/>\
+<path d='M12 2.7a1 1 0 0 1 1 1v1.3a1 1 0 1 1-2 0V3.7a1 1 0 0 1 1-1zm0 16.0a1 1 0 0 1 1 1V21a1 1 0 1 1-2 0v-1.3a1 1 0 0 1 1-1zM2.7 12a1 1 0 0 1 1-1H5a1 1 0 1 1 0 2H3.7a1 1 0 0 1-1-1zm16.0 0a1 1 0 0 1 1-1H21a1 1 0 1 1 0 2h-1.3a1 1 0 0 1-1-1z'/>\
+<path d='M5.15 5.15a1 1 0 0 1 1.414 0l.92.92a1 1 0 1 1-1.414 1.414l-.92-.92a1 1 0 0 1 0-1.414zm11.366 11.366a1 1 0 0 1 1.414 0l.92.92a1 1 0 1 1-1.414 1.414l-.92-.92a1 1 0 0 1 0-1.414zM18.85 5.15a1 1 0 0 1 0 1.414l-.92.92a1 1 0 1 1-1.414-1.414l.92-.92a1 1 0 0 1 1.414 0zM7.484 16.516a1 1 0 0 1 0 1.414l-.92.92A1 1 0 1 1 5.15 17.436l.92-.92a1 1 0 0 1 1.414 0z'/>\
+</svg>") center/60% 60% no-repeat;
+
+  opacity: .98;
+  pointer-events: none;
+
+  transition: left .18s ease, -webkit-mask .18s ease, mask .18s ease;
+}
+
+/* 4) Estado DARK: knob a la derecha + misma luna (crescent) */
+html[data-bs-theme="dark"] .navbar .quarto-color-scheme-toggle::before,
+html.quarto-dark .navbar .quarto-color-scheme-toggle::before,
+body.quarto-dark .navbar .quarto-color-scheme-toggle::before{
+  left: calc(100% - (var(--tg-h) - (var(--tg-pad) * 2)) - var(--tg-pad));
+}
+
+html[data-bs-theme="dark"] .navbar .quarto-color-scheme-toggle::after,
+html.quarto-dark .navbar .quarto-color-scheme-toggle::after,
+body.quarto-dark .navbar .quarto-color-scheme-toggle::after{
+  left: calc(100% - (var(--tg-h) - (var(--tg-pad) * 2)) - var(--tg-pad));
+
+  /* LUNA creciente – orientación correcta (abre a la izquierda) */
+  -webkit-mask: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>\
+<g transform='translate(24,0) scale(-1,1)'>\
+<path fill-rule='evenodd' d='M12.6 3.2c-3.4.5-6 3.4-6 6.9 0 3.9 3.2 7.1 7.1 7.1 3.2 0 5.9-2.1 6.8-5.1-1.1.4-2.3.6-3.5.5-3.9-.2-6.9-3.4-6.9-7.3 0-.8.1-1.5.3-2.1z'/>\
+</g></svg>") center/74% 74% no-repeat;
+
+          mask: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>\
+<g transform='translate(24,0) scale(-1,1)'>\
+<path fill-rule='evenodd' d='M12.6 3.2c-3.4.5-6 3.4-6 6.9 0 3.9 3.2 7.1 7.1 7.1 3.2 0 5.9-2.1 6.8-5.1-1.1.4-2.3.6-3.5.5-3.9-.2-6.9-3.4-6.9-7.3 0-.8.1-1.5.3-2.1z'/>\
+</g></svg>") center/74% 74% no-repeat;
+}
+
+/* 5) Hover sobrio */
+.navbar .quarto-color-scheme-toggle:hover{
+  filter: brightness(1.04);
+}
+
+
+
 /* =========================
    0) Base / Layout Quarto
 ========================= */

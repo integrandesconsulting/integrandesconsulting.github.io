@@ -54,7 +54,7 @@ Ingeniera Ambiental por la Universidad Nacional de Trujillo (UNT). Cuenta con es
 :::
 
 ::: {.team-card}
-![](images/tierra.gif){.team-photo}
+![](images/rafael3.jpg){.team-photo}
 
 ### **Reyes de la Cruz Rafael** {.team-name}
 
@@ -69,7 +69,7 @@ Estudiante de ingeniería civil de la UNI
   data-bs-target="#teamModal"
   data-name="Reyes de la Cruz Rafael"
   data-role="Colaborador"
-  data-photo="images/tierra.gif"
+  data-photo="images/rafael3.jpg"
   data-details="details-rafael">
   Ver detalle
 </button>
@@ -128,7 +128,7 @@ Aporta y MIT IDSS (Massachusetts Institute of Technology - Institute for Data, S
 Colaborador enfocado en soporte, documentación y elaboración de contenido. Apoya la comunicación técnica y el orden de información del equipo.
 
 ### Contribuciones
-- Ensayos y redacción.
+- Manejo de datos e integración al Rstudio.
 - Soporte y ordenamiento de material.
 - Documentación técnica para proyectos y entregables.
 :::
