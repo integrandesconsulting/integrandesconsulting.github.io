@@ -77,6 +77,7 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Densidades poblacionales en el Perú – Integrandes">
+<meta property="og:description" content="">
 <meta property="og:image" content="https://integrandesconsulting.github.io/images/densidad/piura.png">
 <meta property="og:site_name" content="Integrandes">
 <meta property="og:image:alt" content="Densidad de población en el departamento de Piura">
@@ -299,9 +300,19 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contenido</h2>
+   
+  <ul>
+  <li><a href="#iniciativa" id="toc-iniciativa" class="nav-link active" data-scroll-target="#iniciativa">Iniciativa</a></li>
+  <li><a href="#departamentos" id="toc-departamentos" class="nav-link" data-scroll-target="#departamentos">Departamentos:</a></li>
+  <li><a href="#feedback" id="toc-feedback" class="nav-link" data-scroll-target="#feedback">Feedback</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -311,7 +322,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -323,19 +334,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="breadcrumbs">
-<span>Portafolio</span> <span class="sep">&gt;</span> <span>Visualización espacial 3D de la densidad poblacional en el Perú</span> <span class="sep">&gt;</span>
-</div>
-<section id="densidades-poblacionales-en-el-perú" class="level2">
-<h2 class="anchored" data-anchor-id="densidades-poblacionales-en-el-perú">Densidades poblacionales en el Perú</h2>
-<section id="iniciativa" class="level3">
-<h3 class="anchored" data-anchor-id="iniciativa">Iniciativa</h3>
+<section id="iniciativa" class="level1">
+<h1>Iniciativa</h1>
 <p>La base de datos de Kontur sobre población mundial, es una de las fuentes de libre acceso más actualizadas en el campo demográfico. Si bien fue originalmente pensada para su uso en situaciones de emergencia y desastre de gran escala, el utilizar y solicitar mejoras a esta base de datos puede ayudar a resolver muchos más problemas claves en el ámbito territorial.</p>
 <p>Por todo ello, estaremos desarrollando para cada departamento una visualización tridimensional que permita facilitar la reflexión sobre la densidad de la población peruana, así como recopilar sugerencias para enviarlas a los desarrolladores de dicha base de datos.</p>
 <p>Avanzaremos poco a poco, ¡departamento por departamento…!</p>
 </section>
-<section id="departamentos" class="level3">
-<h3 class="anchored">Departamentos:</h3>
+<section id="departamentos" class="level1">
+<h1>Departamentos:</h1>
 <div class="accordion densidad-acc" id="densidadAccordion">
 
   <!-- PIURA -->
@@ -469,27 +475,31 @@ ul.task-list li input[type="checkbox"] {
 
 
   </div>
-  
-   <!-- FEEDBACK -->
+</div></section>
+<section id="feedback" class="level1">
+<h1>Feedback</h1>
+<!-- =========================
+     FEEDBACK (SECCIÓN APARTE)
+     ========================= -->
+
+<p>
+  Agradecemos que te tomes unos minutos para dejarnos tus comentarios
+  sobre la visualización, el departamento analizado y la base de datos utilizada.
+</p>
+
+<div class="accordion densidad-feedback-acc" id="feedbackAccordion">
 
   <div class="accordion-item">
-    <h2 class="accordion-header anchored" id="hFeedback">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cFeedback" aria-expanded="false" aria-controls="cFeedback">
-        Feedback sobre la iniciativa y la base de datos
+    <h2 class="accordion-header anchored" id="hForm" data-anchor-id="feedback">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cForm" aria-expanded="false" aria-controls="cForm">
+        Abrir formulario
       </button>
     </h2>
 
-    <div id="cFeedback" class="accordion-collapse collapse" aria-labelledby="hFeedback" data-bs-parent="#densidadAccordion">
+    <div id="cForm" class="accordion-collapse collapse" aria-labelledby="hForm" data-bs-parent="#feedbackAccordion">
 
       <div class="accordion-body densidad-body">
 
-          <p>
-            Agradecemos que te tomes unos minutos para dejarnos tus comentarios
-            sobre la visualización, el departamento analizado y la base de datos utilizada.
-          </p>
-        </div>
-
-        <!-- Formulario Google Forms embebido -->
         <div class="densidad-form-wrap">
           <iframe class="densidad-form" src="https://docs.google.com/forms/d/e/1FAIpQLSdqN79o4XunvftVVX-pXWjwZsKu_hpVL-2zZp5Cny_aGtD3OA/viewform?embedded=true" width="100%" height="1050" style="border:none; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.10);" loading="lazy">
           </iframe>
@@ -498,12 +508,13 @@ ul.task-list li input[type="checkbox"] {
       </div>
     </div>
   </div>
-  
-<!-- TARJETA INFORMATIVA / SERVICIO EXTRA -->
 
+</div>
+
+<!-- TARJETA INFORMATIVA / SERVICIO EXTRA -->
 <div class="densidad-callout">
   <div class="densidad-callout-text">
-    Si deseas imagénes con mayor resolución (&gt;50&nbsp;MB)
+    Si deseas imágenes con mayor resolución (&gt;50&nbsp;MB)
     o con un estilo más personalizado, ¡podemos ofrecerte ese servicio!
   </div>
   <div class="densidad-callout-mail">
@@ -513,10 +524,8 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
 </div>
-  
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -974,7 +983,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </ul>
     </div>
     <div class="nav-footer-right">
-<p>Copyright © 2026 R.R.</p>
+<p>Copyright © 2026</p>
 </div>
   </div>
 </footer>

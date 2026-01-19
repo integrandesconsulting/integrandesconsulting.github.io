@@ -1,0 +1,8 @@
+---
+title: "Recursos de gestión comunitaria del riesgo de desastres"
+description: "Guías, plantillas y material para gestión territorial."
+author: "Integrandes"
+date: "2026-01-10"
+image: "../images/portafolio/recursosnotion.png"
+---
+[Ir al recurso en Notion](https://jurteagat.notion.site/Toolkit-Gesti-n-Comunitaria-del-Riesgo-de-Desastres-45e7d495c732473d8a15e1a30a7e2255){target="_blank"}

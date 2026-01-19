@@ -359,11 +359,18 @@ html.quarto-dark body.page-index .card-soft li{
 
 
 /* ------ ✅ E Q U I P O ------*/
+/* =========================
+   EQUIPO (Sandstone / Darkly)
+   Toggle real Quarto: data-bs-theme
+   ========================= */
 
 /* Fondo solo en página equipo */
-.page-equipo{
+html[data-bs-theme="light"] .page-equipo{
   background: #E8F3FF;
-} /* ✅ aquí QUITÉ la llave suelta extra */
+}
+html[data-bs-theme="dark"] .page-equipo{
+  background: #0D1117;
+}
 
 /* ===== Tipografía uniforme usando la del tema ===== */
 .team-title,
@@ -378,7 +385,7 @@ html.quarto-dark body.page-index .card-soft li{
 .team-card strong,
 .team-button{
   font-family: var(--font-sans);
-  font-weight: normal;
+  font-weight: 300;
 }
 
 /* Título Equipo */
@@ -389,10 +396,7 @@ html.quarto-dark body.page-index .card-soft li{
   margin: 2.2rem 0 1.3rem;
   color: #0A1F2C;
 }
-
-html[data-bs-theme="dark"] .team-title,
-body[data-bs-theme="dark"] .team-title,
-.quarto-dark .team-title{
+html[data-bs-theme="dark"] .team-title{
   color: #F2FAFF !important;
 }
 
@@ -446,22 +450,29 @@ body[data-bs-theme="dark"] .team-title,
   text-justify: inter-word;
 }
 
+/* ==================================================
+   CARD (LIGHT - DEFAULT)
+   ✅ Se aplica SIEMPRE en modo Sandstone (light)
+   ================================================== */
+
 .team-card{
-  background: #AEE6FF;
+  background: #ffffff;                 /* ✅ tarjeta clara */
   border-radius: 22px;
   padding: 1.6rem;
-  border: 0;
+  border: 1px solid rgba(0,0,0,.08);
   box-shadow: 0 8px 28px rgba(0,0,0,0.12);
-  transition: transform .25s ease, box-shadow .25s ease;
-  color: #0A1F2C;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  color: #0A1F2C;                      /* ✅ texto oscuro */
   overflow: hidden;
 }
 
 .team-card:hover{
   transform: translateY(-8px);
-  box-shadow: 0 16px 44px rgba(0,162,255,0.32);
+  box-shadow: 0 16px 44px rgba(0,162,255,0.18);
+  border-color: rgba(0,162,255,0.22);
 }
 
+/* Foto */
 .team-photo{
   width: 100%;
   aspect-ratio: 1/1;
@@ -469,24 +480,23 @@ body[data-bs-theme="dark"] .team-title,
   border-radius: 16px;
   display: block;
   margin-bottom: 1rem;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.55);
 }
 
+/* Nombre (LIGHT) */
 .team-name{
   font-size: 1.45rem;
   font-weight: 300;
   margin: 0.2rem 0 0.5rem;
   color: #062233;
 }
-@media (prefers-color-scheme: dark){
-  .team-name{ color: #FFFFFF; }
+
+/* strong (LIGHT) */
+.team-card strong{
+  color: #062233;
 }
 
-.team-card strong{ color: #062233; }
-@media (prefers-color-scheme: dark){
-  .team-card strong{ color: #D7E6F0; }
-}
-
+/* Botón (LIGHT) */
 .team-button{
   display: inline-block;
   margin-top: 1.2rem;
@@ -507,37 +517,58 @@ body[data-bs-theme="dark"] .team-title,
   transform: scale(1.04);
 }
 
-@media (prefers-color-scheme: dark){
-  .team-card{
-    background: #2B2F33;
-    box-shadow: 0 14px 34px rgba(0,0,0,0.55);
-    color: #FFFFFF;
-  }
+/* ==================================================
+   CARD (DARK - Darkly)
+   Compatible con: html[data-bs-theme="dark"] y .quarto-dark
+   ================================================== */
 
-  .team-card:hover{
-    box-shadow: 0 18px 48px rgba(0,212,255,0.28);
-  }
-
-  .team-photo{
-    background: rgba(255,255,255,0.06);
-  }
-
-  .team-button{
-    background: #00D4FF;
-    color: #0A0F14;
-    box-shadow: 0 10px 22px rgba(0,212,255,0.18);
-    font-weight: 300;
-  }
-
-  .team-button:hover{
-    background: #FF2BE2;
-    color: #ffffff;
-  }
+html[data-bs-theme="dark"] .team-card,
+.quarto-dark .team-card{
+  background: #2B2F33;
+  border-color: rgba(255,255,255,.10);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.55);
+  color: #FFFFFF;
 }
 
-/* ------ EQUIPO FLOTANTE ----- */
+html[data-bs-theme="dark"] .team-card:hover,
+.quarto-dark .team-card:hover{
+  box-shadow: 0 18px 48px rgba(0,212,255,0.28);
+  border-color: rgba(0,212,255,0.22);
+}
 
-/* ✅ Un solo bloque tipográfico para modal (sin duplicados) */
+html[data-bs-theme="dark"] .team-photo,
+.quarto-dark .team-photo{
+  background: rgba(255,255,255,0.06);
+}
+
+html[data-bs-theme="dark"] .team-name,
+.quarto-dark .team-name{
+  color: #FFFFFF;
+}
+
+html[data-bs-theme="dark"] .team-card strong,
+.quarto-dark .team-card strong{
+  color: #D7E6F0;
+}
+
+html[data-bs-theme="dark"] .team-button,
+.quarto-dark .team-button{
+  background: #00D4FF;
+  color: #0A0F14;
+  box-shadow: 0 10px 22px rgba(0,212,255,0.18);
+  font-weight: 300;
+}
+
+html[data-bs-theme="dark"] .team-button:hover,
+.quarto-dark .team-button:hover{
+  background: #FF2BE2;
+  color: #ffffff;
+}
+
+
+/* ------ EQUIPO FLOTANTE (MODAL) ----- */
+
+/* ✅ Un solo bloque tipográfico para modal */
 #teamModal,
 #teamModal *{
   font-family: var(--font-sans) !important;
@@ -648,23 +679,14 @@ body[data-bs-theme="dark"] .team-title,
   text-decoration: none;
   border-bottom: 1px solid rgba(0,0,0,.25);
 }
-@media (prefers-color-scheme: dark){
-  .team-modal-content a{
-    border-bottom-color: rgba(255,255,255,.28);
-  }
+html[data-bs-theme="dark"] .team-modal-content a{
+  border-bottom-color: rgba(255,255,255,.28);
 }
 
 .team-modal-right{
   max-height: 70vh;
   overflow: auto;
   padding-right: .25rem;
-}
-
-@media (prefers-color-scheme: dark){
-  .team-modal-title,
-  .team-modal-role{
-    color: #071318;
-  }
 }
 
 @media (max-width: 768px){
@@ -677,13 +699,11 @@ body[data-bs-theme="dark"] .team-title,
   }
 }
 
-/* EXCEPCIONES en negrita (las mantengo igual) */
+/* EXCEPCIONES en negrita */
 #teamModal .team-name{ font-weight: 600 !important; }
 #teamModal .team-modal-role{ font-weight: 600 !important; }
 #teamModal .team-modal-content h3,
-#teamModal .team-detail h3{ font-weight: 600 !important; }
-#teamModal .team-modal-content strong,
-#teamModal .team-modal-content b{ font-weight: 600 !important; }
+#teamModal .team-
 
 /* =========================
    SERVICIOS – CALLOUTS
@@ -736,161 +756,37 @@ body[data-bs-theme="dark"] .team-title,
 
 /* ----- ✅ P O R T A F O L I O (Sandstone / Darkly) --------*/
 
-.portfolio-section{
-  width: 100%;
-  padding: 2rem 0 3rem;
-  font-family: var(--font-navbar);
-}
-
-.portfolio-heading{
-  text-align: center;
-  font-size: 2.6rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
-  font-family: var(--font-navbar);
-  color: var(--bs-body-color);
-}
-
-.portfolio-grid{
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.3rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  font-family: var(--font-navbar);
-}
-
-@media (max-width: 900px){
-  .portfolio-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-@media (max-width: 520px){
-  .portfolio-grid{ grid-template-columns: 1fr; }
-}
-
-/* ======================================================
-   CARD – SANDSTONE / LIGHT (UTEC CELESTE)
-   ====================================================== */
-
-.portfolio-card{
-  display: flex;              /* ← CAMBIO */
-  flex-direction: column;     /* ← NUEVO */
-  border-radius: 16px;
+/* ===== Listing: mejor look y hereda Sandstone/Darkly ===== */
+.quarto-listing .quarto-listing-item{
+  border-radius: 14px;
   overflow: hidden;
-  text-decoration: none;
-  font-family: var(--font-navbar);
-  /* … tus colores actuales NO se tocan … */
-}
-
-  /* 🎓 UTEC Light */
-  background: #cfeeff;                 /* celeste UTEC */
-  border: 1px solid rgba(20, 80, 110, 0.18);
-  color: #0e2a38;
-
-  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(var(--bs-body-color-rgb), .12);
+  background: var(--bs-body-bg);
   transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 
-.portfolio-card:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
-  border-color: rgba(20, 80, 110, 0.30);
+.quarto-listing .quarto-listing-item:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.12);
+  border-color: rgba(var(--bs-primary-rgb), .35);
 }
 
-.portfolio-thumb{
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;
-}
-
-.portfolio-body{
-  padding: 0.9rem 1rem 1rem;
-  font-family: var(--font-navbar);
-
-  display: flex;              /* ← NUEVO */
-  flex-direction: column;     /* ← NUEVO */
-  flex-grow: 1;               /* ← CLAVE */
-}
-
-.portfolio-title{
-  font-size: 1.15rem;
-  line-height: 1.25;
-  margin-bottom: 0.4rem;
+.quarto-listing .listing-title{
+  font-size: 1.55rem;
   font-weight: 500;
-  color: #0e2a38;
 }
 
-.portfolio-desc{
-  font-size: 0.93rem;
-  line-height: 1.3;
-  margin-bottom: 0.75rem;
-  font-weight: 400;
-  color: rgba(14, 42, 56, 0.75);
+.quarto-listing .listing-description{
+  opacity: .85;
 }
 
-/* 🏷️ Badge – celeste UTEC metálico (LIGHT) */
-.portfolio-badge{
-  display: inline-block;
-  font-size: 0.78rem;
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
-  font-weight: 400;
-  margin-top: auto;           /* ← LO FIJA ABAJO */
-  align-self: flex-start;     /* ← alineado a la izquierda */
-
-  /* Celeste UTEC visible */
-  background: linear-gradient(
-    180deg,
-    #e6f6ff 0%,
-    #bfe9ff 100%
-  );
-
-  border: 1px solid rgba(0, 110, 160, 0.45);
-  color: #0a3a55;
-
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.65),
-    0 1px 2px rgba(0,0,0,0.12);
-}
-
-
-/* ======================================================
-   DARKLY – UTEC DARK (PLOMO)
-   ====================================================== */
-
-@media (prefers-color-scheme: dark){
-
-  .portfolio-card{
-    background: #2b2f33;               /* plomo UTEC */
-    border-color: rgba(120, 180, 210, 0.22);
-    color: #eef4f8;
-    box-shadow: 0 14px 34px rgba(0,0,0,0.55);
-  }
-
-  .portfolio-card:hover{
-    box-shadow: 0 18px 40px rgba(0,0,0,0.70);
-    border-color: rgba(120, 180, 210, 0.38);
-  }
-
-  .portfolio-title{
-    color: #f2f7fb;
-  }
-
-  .portfolio-desc{
-    color: rgba(242, 247, 251, 0.78);
-  }
-
-  /* 🏷️ Badge – celeste técnico (dark) */
-  .portfolio-badge{
-    background: linear-gradient(
-      180deg,
-      rgba(120,180,210,0.25),
-      rgba(120,180,210,0.12)
-    );
-    border-color: rgba(120,180,210,0.35);
-    color: #eaf4fb;
-  }
+.quarto-listing .listing-image img{
+  border-radius: 12px;
+  height: 120px;
+  width: 220px;
+  object-fit: cover;
+  border: 1px solid rgba(var(--bs-body-color-rgb), .15);
 }
 
 

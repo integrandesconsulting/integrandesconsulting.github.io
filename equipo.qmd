@@ -58,9 +58,11 @@ Ingeniera Ambiental por la Universidad Nacional de Trujillo (UNT). Cuenta con es
 
 ### **Reyes de la Cruz Rafael** {.team-name}
 
-**Colaborador**
+**Practicante**
 
-Estudiante de ingeniería civil de la UNI
+Estudiante de ingeniería civil - UNI. 
+
+Apoyo técnico en análisis de datos y documentación de proyectos. Manejo RStudio, AutoCAD, Civil 3D y fundamentos de C++.
 
 <button
   type="button"
@@ -125,12 +127,18 @@ Aporta y MIT IDSS (Massachusetts Institute of Technology - Institute for Data, S
 
 ::: {#details-rafael .team-detail}
 ### Perfil
-Colaborador enfocado en soporte, documentación y elaboración de contenido. Apoya la comunicación técnica y el orden de información del equipo.
+Colaborador técnico enfocado en **análisis de datos, automatización y soporte digital** para proyectos de ingeniería. Apoya al equipo en la **organización de información**, elaboración de contenido técnico y desarrollo de recursos para visualización y toma de decisiones.
+
+### Competencias técnicas
+- **Programación:** C++ (fundamentos y resolución de problemas), **R / RStudio** (procesamiento y visualización de datos).
+- **Diseño y modelamiento:** **AutoCAD** y **Civil 3D** (planos, geometría vial, perfiles, secciones y apoyo en modelado).
+- **Gestión y productividad:** Notion (formación en Platzi) para **documentación, bases de conocimiento y organización de proyectos**.
 
 ### Contribuciones
-- Manejo de datos e integración al Rstudio.
-- Soporte y ordenamiento de material.
-- Documentación técnica para proyectos y entregables.
+- Manejo de datos e integración de información en **RStudio**.
+- Soporte y ordenamiento de material técnico para entregables.
+- Documentación y estructuración de recursos (web, reportes y contenidos).
+- Apoyo en flujos de trabajo de ingeniería con **AutoCAD / Civil 3D**.
 :::
 
 :::

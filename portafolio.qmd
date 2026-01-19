@@ -2,53 +2,11 @@
 title: "Portafolio de recursos"
 page-layout: full
 toc: false
-body-class: page-portafolio
 format: html
+listing:
+  contents: recursos
+  sort: "date desc"
+  filter-ui: true
+  sort-ui: true
+  fields: [date, author, title, description, image]
 ---
-
-```{=html}
-  <div class="portfolio-grid">
-
-    <!-- ✅ Item 1 -->
-    <a class="portfolio-card" href="https://jurteagat.notion.site/Toolkit-Gesti-n-Comunitaria-del-Riesgo-de-Desastres-45e7d495c732473d8a15e1a30a7e2255">
-      <img class="portfolio-thumb" src="images/portafolio/recursosnotion.png" alt="Gestión comunitaria del riesgo">
-      <div class="portfolio-body">
-        <div class="portfolio-title">Recursos de gestión comunitaria del riesgo de desastres</div>
-        <div class="portfolio-desc">Guías, plantillas y material para gestión territorial.</div>
-        <div class="portfolio-badge">En elaboración</div>
-      </div>
-    </a>
-
-    <!-- ✅ Item 2 -->
-    <a class="portfolio-card" href="dashboard-damnificados.qmd">
-      <img class="portfolio-thumb" src="images/portafolio/dashboardmapa.png" alt="Dashboard damnificados">
-      <div class="portfolio-body">
-        <div class="portfolio-title">Dashboard de damnificados y viviendas destruidas</div>
-        <div class="portfolio-desc">Exploración interactiva por región y distrito.</div>
-        <div class="portfolio-badge">En elaboración</div>
-      </div>
-    </a>
-
-    <!-- ✅ Item 3 -->
-    <a class="portfolio-card" href="https://integrandesconsulting.github.io/densidad.html">
-      <img class="portfolio-thumb" src="images/portafolio/espacial3d.png" alt="Densidad 3D Perú">
-      <div class="portfolio-body">
-        <div class="portfolio-title">Visualización espacial 3D de densidad poblacional en el Perú</div>
-        <div class="portfolio-desc">Mapa 3D con capas de exploración y zoom.</div>
-        <div class="portfolio-badge">Disponible</div>
-      </div>
-    </a>
-
-    <!-- ✅ Item 4 (nuevo) -->
-    <a class="portfolio-card" href="nuevo-item.qmd">
-      <img class="portfolio-thumb" src="images/portafolio/estadistica.png" alt="Nuevo item">
-      <div class="portfolio-body">
-        <div class="portfolio-title">Nuevo recurso / nuevo item</div>
-        <div class="portfolio-desc">Fórmulas y graficas.</div>
-        <div class="portfolio-badge">En elaboración</div>
-      </div>
-    </a>
-
-  </div>
-</div>
-```

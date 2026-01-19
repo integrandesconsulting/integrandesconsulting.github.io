@@ -1,12 +1,14 @@
 ---
 title: "Densidades poblacionales en el Perú"
 page-layout: full
-toc: false
+toc: true
+toc-location: right
+toc-title: "Contenido"
+toc-depth: 3
 body-class: page-densidad
 ---
-<div class="breadcrumbs"> <span>Portafolio</span> <span class="sep">></span> <span>Visualización espacial 3D de la densidad poblacional en el Perú</span> <span class="sep">></span> </div>
-## Densidades poblacionales en el Perú
-### Iniciativa
+
+# Iniciativa
 
 La base de datos de Kontur sobre población mundial, es una de las fuentes de libre acceso más actualizadas en el campo demográfico. Si bien fue originalmente pensada para su uso en situaciones de emergencia y desastre de gran escala, el utilizar y solicitar mejoras a esta base de datos puede ayudar a resolver muchos más problemas claves en el ámbito territorial.
 
@@ -14,7 +16,7 @@ Por todo ello, estaremos desarrollando para cada departamento una visualización
 
 Avanzaremos poco a poco, ¡departamento por departamento...!
 
-### Departamentos:
+# Departamentos:
 
 ```{=html}
 <div class="accordion densidad-acc" id="densidadAccordion">
@@ -200,30 +202,36 @@ Avanzaremos poco a poco, ¡departamento por departamento...!
 
 
   </div>
-  
-   <!-- FEEDBACK -->
+```
+
+# Feedback
+
+```{=html}
+<!-- =========================
+     FEEDBACK (SECCIÓN APARTE)
+     ========================= -->
+
+<p>
+  Agradecemos que te tomes unos minutos para dejarnos tus comentarios
+  sobre la visualización, el departamento analizado y la base de datos utilizada.
+</p>
+
+<div class="accordion densidad-feedback-acc" id="feedbackAccordion">
 
   <div class="accordion-item">
-    <h2 class="accordion-header" id="hFeedback">
+    <h2 class="accordion-header" id="hForm">
       <button class="accordion-button collapsed" type="button"
-              data-bs-toggle="collapse" data-bs-target="#cFeedback"
-              aria-expanded="false" aria-controls="cFeedback">
-        Feedback sobre la iniciativa y la base de datos
+              data-bs-toggle="collapse" data-bs-target="#cForm"
+              aria-expanded="false" aria-controls="cForm">
+        Abrir formulario
       </button>
     </h2>
 
-    <div id="cFeedback" class="accordion-collapse collapse"
-         aria-labelledby="hFeedback" data-bs-parent="#densidadAccordion">
+    <div id="cForm" class="accordion-collapse collapse"
+         aria-labelledby="hForm" data-bs-parent="#feedbackAccordion">
 
       <div class="accordion-body densidad-body">
 
-          <p>
-            Agradecemos que te tomes unos minutos para dejarnos tus comentarios
-            sobre la visualización, el departamento analizado y la base de datos utilizada.
-          </p>
-        </div>
-
-        <!-- Formulario Google Forms embebido -->
         <div class="densidad-form-wrap">
           <iframe
             class="densidad-form"
@@ -238,12 +246,13 @@ Avanzaremos poco a poco, ¡departamento por departamento...!
       </div>
     </div>
   </div>
-  
-<!-- TARJETA INFORMATIVA / SERVICIO EXTRA -->
 
+</div>
+
+<!-- TARJETA INFORMATIVA / SERVICIO EXTRA -->
 <div class="densidad-callout">
   <div class="densidad-callout-text">
-    Si deseas imagénes con mayor resolución (&gt;50&nbsp;MB)
+    Si deseas imágenes con mayor resolución (&gt;50&nbsp;MB)
     o con un estilo más personalizado, ¡podemos ofrecerte ese servicio!
   </div>
   <div class="densidad-callout-mail">
@@ -253,5 +262,4 @@ Avanzaremos poco a poco, ¡departamento por departamento...!
     </a>
   </div>
 </div>
-  
 ```

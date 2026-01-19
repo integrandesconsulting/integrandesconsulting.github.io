@@ -1,0 +1,8 @@
+---
+title: "Visualización espacial 3D de densidad poblacional en el Perú"
+description: "Mapa 3D con capas de exploración y zoom."
+author: "Integrandes"
+date: "2026-01-05"
+image: "../images/portafolio/espacial3d.png"
+---
+[Ver visualización](https://integrandesconsulting.github.io/densidad.html){target="_blank"}

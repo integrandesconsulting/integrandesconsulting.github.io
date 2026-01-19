@@ -1,0 +1,8 @@
+---
+title: "Dashboard de damnificados y viviendas destruidas"
+description: "Exploración interactiva por región y distrito."
+author: "Integrandes"
+date: "2026-01-08"
+image: "../images/portafolio/dashboardmapa.png"
+---
+[Ver dashboard](../dashboard-damnificados.qmd)
