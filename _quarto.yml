@@ -6,11 +6,11 @@ project:
 
 website:
   title: "Integrandes"
-  favicon: images/logo.png
+  favicon: images/logo_temp.png
   open-graph: true
   site-url: https://integrandesconsulting.github.io/
   navbar:
-    logo: images/logo.png
+    logo: images/logo_temp.png
     collapse-level: 1
     right:
       - href: index.qmd
@@ -26,13 +26,13 @@ website:
   page-footer:
     border: true
     center:
-      - icon: github
-        href: https://github.com/integrandesconsulting
+      - icon: twitter
+        href: https://twitter.com/TU_USUARIO
       - icon: facebook
         href: https://www.facebook.com/integrandes.co
-      - icon: youtube
-        href: https://www.youtube.com/
-    right: "Copyright © 2026"
+      - icon: linkedin
+        href: https://www.linkedin.com/in/TU_USUARIO/
+    right: "Copyright ©"
 
 format:
   html:

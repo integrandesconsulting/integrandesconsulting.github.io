@@ -5,7 +5,20 @@ format: html
 
 Puedes encontrarme en:
 
-- **GitHub:** https://github.com/integrandesconsulting
+```{=html}
+<ul>
+  <li>
+    <a href="https://www.facebook.com/TU_USUARIO" target="_blank" rel="noopener">
+      Facebook
+    </a>
+  </li>
+  <li>
+    <a href="https://twitter.com/TU_USUARIO" target="_blank" rel="noopener">
+      Twitter
+    </a>
+  </li>
+</ul>
+```
 
 ### 📩 Formulario de contacto
 

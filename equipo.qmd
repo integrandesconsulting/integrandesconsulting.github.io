@@ -56,7 +56,7 @@ Ingeniera Ambiental por la Universidad Nacional de Trujillo (UNT). Cuenta con es
 ::: {.team-card}
 ![](images/rafael3.jpg){.team-photo}
 
-### **Reyes de la Cruz Rafael** {.team-name}
+### **Reyes de la Cruz Adolfo Rafael** {.team-name}
 
 **Practicante**
 
@@ -70,7 +70,7 @@ Apoyo técnico en análisis de datos y documentación de proyectos. Manejo RStud
   data-bs-toggle="modal"
   data-bs-target="#teamModal"
   data-name="Reyes de la Cruz Rafael"
-  data-role="Colaborador"
+  data-role="Practicante"
   data-photo="images/rafael3.jpg"
   data-details="details-rafael">
   Ver detalle
@@ -127,7 +127,7 @@ Aporta y MIT IDSS (Massachusetts Institute of Technology - Institute for Data, S
 
 ::: {#details-rafael .team-detail}
 ### Perfil
-Colaborador técnico enfocado en **análisis de datos, automatización y soporte digital** para proyectos de ingeniería. Apoya al equipo en la **organización de información**, elaboración de contenido técnico y desarrollo de recursos para visualización y toma de decisiones.
+Colaborador técnico enfocado en análisis de datos, automatización y soporte digital para proyectos de ingeniería. Apoya al equipo en la organización de información, elaboración de contenido técnico y desarrollo de recursos para visualización y toma de decisiones.
 
 ### Competencias técnicas
 - **Programación:** C++ (fundamentos y resolución de problemas), **R / RStudio** (procesamiento y visualización de datos).

@@ -157,6 +157,23 @@ body.quarto-dark .navbar .quarto-color-scheme-toggle::after{
   filter: brightness(1.04);
 }
 
+/* =========================================
+   NAVBAR – Hover con brillo (links)
+   ========================================= */
+.navbar .nav-link{
+  transition: all .22s ease-in-out;
+  border-radius: 999px;
+  padding: .35rem .75rem;
+}
+
+/* Hover universal: brillo + fondo suave */
+.navbar .nav-link:hover{
+  background: color-mix(in srgb, currentColor 14%, transparent);
+  box-shadow: 0 0 18px color-mix(in srgb, currentColor 22%, transparent);
+  text-shadow: 0 0 12px color-mix(in srgb, currentColor 45%, transparent);
+  transform: translateY(-1px);
+}
+
 
 
 /* =========================
@@ -279,6 +296,10 @@ main.content {
   height: auto;
 }
 
+html[data-bs-theme="dark"] .brand-logo{
+  filter: brightness(1.18) contrast(1.22) saturate(1.08);
+}
+
 .brand-title {
   font-size: clamp(2.2rem, 4vw, 3.5rem);
   font-weight: 700;
@@ -292,6 +313,39 @@ main.content {
   margin-top: 0.2rem;
   font-weight: 500;
 }
+
+/* =========================================
+   NAVBAR LOGO – círculo REAL (forzado)
+   ========================================= */
+
+.navbar .navbar-brand{
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: .55rem;
+}
+
+/* El logo que inserta Quarto */
+.navbar img.navbar-logo,
+.navbar .navbar-brand img{
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  min-height: 38px !important;
+
+  object-fit: cover !important;
+  object-position: center !important;
+
+  border-radius: 999px !important;
+  clip-path: circle(50% at 50% 50%);
+
+  display: block !important;
+  flex: 0 0 auto !important;
+
+  background: #fff !important;
+  padding: 2px !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,.18) !important;
+}
+
 
 /* =========================================================
    CARD-SOFT – recuperar aire + línea bajo el título
@@ -331,8 +385,8 @@ html[data-bs-theme="dark"] .card-soft h2{
 
 /* Light: celeste suave SOLO en index */
 html[data-bs-theme="light"] body.page-index .card-soft,
-body.quarto-dark .card-soft{
-  background-color: rgba(255,255,255,.03);
+body.page-index:not(.quarto-dark) .card-soft{
+  background-color: rgba(0,0,0,.03);
 }
 
 /* Dark: plomo SOLO en index */
@@ -357,6 +411,31 @@ html.quarto-dark body.page-index .card-soft li{
   color: rgba(255,255,255,.82) !important;
 }
 
+html[data-bs-theme="dark"] .brand-title,
+body.quarto-dark .brand-title,
+html.quarto-dark .brand-title{
+  color: rgba(255,255,255,.95) !important;
+}
+
+html[data-bs-theme="dark"] .brand-tagline,
+body.quarto-dark .brand-tagline,
+html.quarto-dark .brand-tagline{
+  color: rgba(255,255,255,.78) !important;
+}
+
+/* =========================================
+   NAVBAR: evitar logo duplicado (dejar solo 1)
+   ========================================= */
+
+/* Si Quarto mete 2 imágenes dentro del brand, oculta la segunda */
+.navbar .navbar-brand img + img{
+  display: none !important;
+}
+
+/* (opcional) por si mete un svg/otro ícono adicional */
+.navbar .navbar-brand .navbar-logo + img{
+  display: none !important;
+}
 
 /* ------ ✅ E Q U I P O ------*/
 /* =========================
@@ -394,14 +473,22 @@ html[data-bs-theme="dark"] .page-equipo{
   font-size: 3.2rem;
   font-weight: 600;
   margin: 2.2rem 0 1.3rem;
-  color: #0A1F2C;
+
+  /* ✅ Sandstone: usa color del tema */
+  color: var(--bs-body-color);
 }
-html[data-bs-theme="dark"] .team-title{
-  color: #F2FAFF !important;
+
+/* ✅ Darkly: asegura contraste total */
+html[data-bs-theme="dark"] .team-title,
+body.quarto-dark .team-title,
+html.quarto-dark .team-title{
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 18px rgba(0,0,0,.45);
 }
 
 /* Grilla */
 .team-grid{
+  align-items: stretch;
   max-width: 1350px;
   margin: 0 auto;
   padding: 0 1rem 2.8rem;
@@ -410,6 +497,7 @@ html[data-bs-theme="dark"] .team-title{
   gap: 1.8rem;
   justify-content: center;
 }
+
 @media (max-width: 1050px){
   .team-grid{ grid-template-columns: repeat(2, minmax(300px, 1fr)); }
 }
@@ -456,15 +544,25 @@ html[data-bs-theme="dark"] .team-title{
    ================================================== */
 
 .team-card{
-  background: #ffffff;                 /* ✅ tarjeta clara */
+  background: #ffffff;
   border-radius: 22px;
   padding: 1.6rem;
   border: 1px solid rgba(0,0,0,.08);
   box-shadow: 0 8px 28px rgba(0,0,0,0.12);
   transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-  color: #0A1F2C;                      /* ✅ texto oscuro */
+  color: #0A1F2C;
   overflow: hidden;
+
+  /* ✅ CLAVE: estructura para botón al pie */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  height: 100%;
+  min-height: 720px;   /* puedes subir a 740 si quieres más espacio */
 }
+
 
 .team-card:hover{
   transform: translateY(-8px);
@@ -499,7 +597,11 @@ html[data-bs-theme="dark"] .team-title{
 /* Botón (LIGHT) */
 .team-button{
   display: inline-block;
-  margin-top: 1.2rem;
+
+  margin-top: auto !important;   /* ✅ lo manda al pie */
+  align-self: center;            /* ✅ centrado */
+  margin-bottom: 0.4rem;
+
   padding: .65rem 1.4rem;
   border-radius: 14px;
   font-weight: 300;
@@ -572,7 +674,17 @@ html[data-bs-theme="dark"] .team-button:hover,
 #teamModal,
 #teamModal *{
   font-family: var(--font-sans) !important;
+}
+
+/* ✅ Peso normal del contenido del modal */
+#teamModal .team-modal-content{
   font-weight: 300;
+}
+
+/* ✅ Negrita real dentro del modal (Markdown **texto**) */
+#teamModal .team-modal-content strong,
+#teamModal .team-modal-content b{
+  font-weight: 700 !important;
 }
 
 .team-details-hidden{ display: none; }
@@ -658,11 +770,17 @@ html[data-bs-theme="dark"] .team-button:hover,
   text-justify: inter-word;
 }
 
+.team-modal-content h2{
+  font-size: 1.55rem !important;  /* ✅ reduce “Educación” grande */
+  font-weight: 600 !important;
+  margin-bottom: 0.6rem;
+}
+
 .team-modal-content h3{
   margin: .25rem 0 .55rem 0;
-  font-weight: 300 !important;
-  font-size: 1.05rem;
-  letter-spacing: .15px;
+  font-weight: 600 !important;
+  font-size: 0.98rem;        /* ✅ más pequeño */
+  letter-spacing: .10px;
 }
 
 .team-modal-content h4,
@@ -686,7 +804,9 @@ html[data-bs-theme="dark"] .team-modal-content a{
 .team-modal-right{
   max-height: 70vh;
   overflow: auto;
-  padding-right: .25rem;
+
+  padding-right: 1.15rem;   /* ✅ más aire a la derecha */
+  padding-left: 0.2rem;     /* opcional: leve aire a la izquierda */
 }
 
 @media (max-width: 768px){
@@ -702,8 +822,26 @@ html[data-bs-theme="dark"] .team-modal-content a{
 /* EXCEPCIONES en negrita */
 #teamModal .team-name{ font-weight: 600 !important; }
 #teamModal .team-modal-role{ font-weight: 600 !important; }
-#teamModal .team-modal-content h3,
-#teamModal .team-
+
+/* ✅ Negrita visible en modal (Light + Dark) */
+#teamModal .team-modal-content strong,
+#teamModal .team-modal-content b{
+  font-weight: 800 !important;
+}
+
+/* ✅ En modo oscuro: además dale un color ligeramente más brillante */
+html[data-bs-theme="dark"] #teamModal .team-modal-content strong,
+body.quarto-dark #teamModal .team-modal-content strong,
+html.quarto-dark #teamModal .team-modal-content strong{
+  color: #FFFFFF !important;
+  text-shadow: 0 0 12px rgba(0, 212, 255, 0.20); /* sutil, estilo pro */
+}
+
+html[data-bs-theme="dark"] #teamModal .team-modal-content strong{
+  background: rgba(0, 212, 255, 0.12);
+  padding: 0.05rem 0.25rem;
+  border-radius: 6px;
+}
 
 /* =========================
    SERVICIOS – CALLOUTS

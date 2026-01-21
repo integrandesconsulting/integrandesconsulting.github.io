@@ -5,12 +5,12 @@ toc: false
 ---
 
 ::: {.callout-note collapse="true" appearance="simple" icon="false"}
-# Consultoría en analítica de datos y de información geoespacial
+# Analítica de datos y de información geoespacial
 
 - Identificación de patrones espaciales
 - Desarrollo de dashboards y visualizaciones de datos en 2D, 3D e interactivos
 - Análisis exploratorio de datos
-- Análisis de imágenes satelitales
+- Diseño de aplicaciones web
 - Visualización de soluciones en la web
 - Webscraping de información
 :::

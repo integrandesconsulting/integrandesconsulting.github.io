@@ -17,7 +17,7 @@ format:
 
 ::::::: hero-right
 ::::: brand
-![](images/logo.png){.brand-logo alt="Logo Integrandes"}
+![](images/logo_transparent.png){.brand-logo alt="Logo Integrandes"}
 
 ::: brand-title
 Integrandes
